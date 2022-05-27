@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>The Devoyage Blog</title>
-        <link>https://TheDevoyage.com/blog</link>
+        <link>https://the-devoyage.github.io/devoyage-web/devoyage-web/blog</link>
         <description>The Devoyage Blog</description>
         <lastBuildDate>Tue, 24 May 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,7 +10,7 @@
         <language>en</language>
         <item>
             <title><![CDATA[Hello World]]></title>
-            <link>https://TheDevoyage.com/blog/hello-world</link>
+            <link>https://the-devoyage.github.io/devoyage-web/devoyage-web/blog/hello-world</link>
             <guid>hello-world</guid>
             <pubDate>Tue, 24 May 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Hello All! Thanks for joining!]]></description>

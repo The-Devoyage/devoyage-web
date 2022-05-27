@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://TheDevoyage.com/blog</id>
+    <id>https://the-devoyage.github.io/devoyage-web/devoyage-web/blog</id>
     <title>The Devoyage Blog</title>
     <updated>2022-05-24T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://TheDevoyage.com/blog"/>
+    <link rel="alternate" href="https://the-devoyage.github.io/devoyage-web/devoyage-web/blog"/>
     <subtitle>The Devoyage Blog</subtitle>
-    <icon>https://TheDevoyage.com/img/logo.svg</icon>
+    <icon>https://the-devoyage.github.io/devoyage-web/devoyage-web/img/logo.svg</icon>
     <entry>
         <title type="html"><![CDATA[Hello World]]></title>
         <id>hello-world</id>
-        <link href="https://TheDevoyage.com/blog/hello-world"/>
+        <link href="https://the-devoyage.github.io/devoyage-web/devoyage-web/blog/hello-world"/>
         <updated>2022-05-24T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Hello All! Thanks for joining!]]></summary>
         <content type="html"><![CDATA[<p>Hello All! Thanks for joining!</p><p>The Devoyage is growing a bit, both in terms of code and some new ways to reach out!</p>]]></content>

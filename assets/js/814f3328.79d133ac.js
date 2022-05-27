@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdevoyage_web=self.webpackChunkdevoyage_web||[]).push([[631],{5641:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Hello World","permalink":"/blog/hello-world"}]}')}}]);
