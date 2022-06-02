@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "The Devoyage",
   tagline: "Code Genesis Products & Development Services",
-  url: "https://TheDevoyage.com/",
+  url: "https://www.thedevoyage.com",
   baseUrl: "/",
   onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "warn",
@@ -16,7 +16,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "The Devoyage", // Usually your GitHub org/user name.
+  organizationName: "The-Devoyage", // Usually your GitHub org/user name.
   projectName: "devoyage-web", // Usually your repo name.
   trailingSlash: false,
 
@@ -77,7 +77,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       colorMode: {
-        respectPrefersColorScheme: true,
+        defaultMode: "dark",
       },
       navbar: {
         style: "dark",

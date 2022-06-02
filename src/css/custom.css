@@ -4,7 +4,9 @@
  * work well for content-centric websites.
  */
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 /* You can override the default Infima variables here. */
 :root {
@@ -36,10 +38,16 @@
   /* Links */
   --ifm-link-hover-decoration: none;
 
+  /* Cards */
+  --ifm-card-border-radius: 0.25rem;
+
+  /* Buttons */
+  --ifm-button-border-radius: 0.25rem;
+
 }
 
-.hero__title {
-  font-size: 4rem;
+.badge--secondary {
+  color: black;
 }
 
 .navbar__title {

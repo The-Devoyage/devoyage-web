@@ -1,0 +1,7 @@
+.activeCard {
+  display: flex;
+}
+
+.hiddenCard {
+  display: none;
+}

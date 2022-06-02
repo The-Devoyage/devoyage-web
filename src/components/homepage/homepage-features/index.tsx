@@ -1,5 +1,4 @@
 import React from "react";
-import clsx from "clsx";
 import styles from "./styles.module.css";
 import Link from "@docusaurus/Link";
 
@@ -23,7 +22,7 @@ const FeatureList: FeatureItem[] = [
         Pre-built and pre-tested, Code Genesis Products are applications that
         you can non-invasively add to your website to kick start development.
         With features such as file uploading, user management, and
-        triggered/automated emails -- you own the functionality and control the
+        triggered/automated emails you own the functionality and control the
         code with a little help from some friends at The Devoyage.
       </>
     ),
@@ -34,9 +33,10 @@ const FeatureList: FeatureItem[] = [
     button: { label: "Our Services", to: "/services" },
     description: (
       <>
-        Hire us to work on your application or ping us to add that next feature
-        to our existing products so you can focus on what matters to your
-        business. We are here to help in any way possible!
+        The Devoyage delivers custom built websites designed to fit your needs
+        and specifications. By providing a preliminary itemized estimate that
+        lays out exactly what we can offer you, we ensure a clear upfront plan
+        for your web applications success.
       </>
     ),
   },
@@ -48,7 +48,7 @@ const FeatureList: FeatureItem[] = [
       <>
         Keep the code you get, modify it to fit your needs, and always have
         access to the most up to date versions of our products. We are not a
-        Software as a Subscription business, and you do not loose your code when
+        Software as a Subscription business, so you do not loose your code when
         you choose to stop paying. You own your code -- the way it should be.
       </>
     ),
@@ -58,40 +58,45 @@ const FeatureList: FeatureItem[] = [
 function Feature({ title, Svg, description, button }: FeatureItem) {
   return (
     <div
-      className={clsx("col col--4")}
+      className="card shadow--md"
       style={{
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
+        height: "100%",
       }}
     >
-      <div>
-        <div className="text--center margin-bottom--md">
+      <div className="card__header">
+        <div className="card__image text--center">
           <Svg className={styles.featureSvg} role="img" />
         </div>
-        <div className="text--center padding-horiz--md">
-          <h3 className="margin-vert--lg">{title}</h3>
+      </div>
+      <div className="card__body">
+        <div>
+          <h3 className="text--center">{title}</h3>
           <p>{description}</p>
         </div>
       </div>
-      <Link to={button.to}>
-        <button className="button button--secondary button--outline button--md button--block margin-top--md">
-          {button.label}
-        </button>
-      </Link>
+      <div className="card__footer">
+        <Link to={button.to}>
+          <button className="button button--secondary button--outline button--md button--block">
+            {button.label}
+          </button>
+        </Link>
+      </div>
     </div>
   );
 }
 
 export default function HomepageFeatures(): JSX.Element {
   return (
-    <section className={clsx(styles.features, "margin-bottom--lg")}>
-      <div className="container">
-        <div className="row" style={{ height: "100%" }}>
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
+    <section className="margin-bottom--md">
+      <div className="row ">
+        {FeatureList.map((props) => (
+          <div key={props.title} className="col col--4 margin-vert--md">
+            <Feature {...props} />
+          </div>
+        ))}
       </div>
     </section>
   );
