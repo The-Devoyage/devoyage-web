@@ -2,7 +2,8 @@ import Layout from "@theme/Layout";
 import React from "react";
 import { Header } from "@site/src/components/common/header";
 import { ProductCard } from "../components/products/product-card";
-const TechCog = require("@site/static/img/tech-cog.png").default;
+import { Description } from "../components/common/description";
+const TechCog = require("@site/static/img/tech-cog.svg").default;
 
 interface ProductInfo {
   title: string;
@@ -14,9 +15,9 @@ interface ProductInfo {
 
 const products: ProductInfo[] = [
   {
-    title: "Full Stack Starter",
+    title: "Orions Arrow",
     description:
-      "A fully featured API, ready to deploy Admin Panel, and a React Starter -- Everything that The Devoyage Has To Offer Bundled In One Easy To Spin Up Compose File.",
+      "A fully featured API, ready to deploy Admin Panel, and a React Starter -- Everything that The Devoyage has to offer bundled in one easy to spin up bundle.",
     image:
       "https://res.cloudinary.com/the-devoyage/image/upload/c_lpad,h_300,w_600/v1653517435/The-Devoyage/full-stack-logo_yklrpi.jpg",
     links: [{ label: "Coming Soon" }],
@@ -42,7 +43,7 @@ const products: ProductInfo[] = [
         label: "GitHub",
         to: "https://github.com/The-Devoyage/graphql-gateway",
       },
-      { label: "Docs", to: "/docs/intro" },
+      { label: "Docs", to: "/gateway/gateway-intro" },
     ],
     tags: ["Security", "Request Routing", "Secure Proxies"],
   },
@@ -57,9 +58,9 @@ const products: ProductInfo[] = [
         label: "GitHub",
         to: "https://www.github.com/the-devoyage/graphql-accounts",
       },
-      { label: "Docs", to: "/docs/intro" },
+      { label: "Docs", to: "/accounts/accounts-intro" },
     ],
-    tags: ["Autorize", "Authenticate", "Security"],
+    tags: ["Authenticate", "Secure", "Identify"],
   },
   {
     title: "GraphQL Users",
@@ -72,7 +73,7 @@ const products: ProductInfo[] = [
         label: "GitHub",
         to: "https://www.github.com/the-devoyage/graphql-users",
       },
-      { label: "Docs", to: "/docs/intro" },
+      { label: "Docs (soon!)" },
     ],
     tags: ["User Data", "Memberships", "Profiles", "Identity"],
   },
@@ -87,7 +88,7 @@ const products: ProductInfo[] = [
         label: "GitHub",
         to: "https://www.github.com/the-devoyage/graphql-media",
       },
-      { label: "Docs", to: "/docs/intro" },
+      { label: "Docs (soon!)" },
     ],
     tags: ["File Uploads", "Images", "PDFs"],
   },
@@ -102,7 +103,7 @@ const products: ProductInfo[] = [
         label: "GitHub",
         to: "https://www.github.com/the-devoyage/graphql-mailer",
       },
-      { label: "Docs", to: "/docs/intro" },
+      { label: "Docs (soon!)" },
     ],
     tags: ["Automated Emails", "Custom Templates"],
   },
@@ -114,17 +115,36 @@ const Products = () => {
       <Header
         title="Code Genesis"
         tagline="Pre-built -- Pre-Tested & Easy to Integrate"
-        image={TechCog}
+        Svg={TechCog}
         buttons={{
-          left: { label: "Get Started", to: "/docs" },
-          right: { label: "Learn More", to: "" },
+          left: { label: "Our Products", to: "#code_genesis_products" },
+          right: { label: "Learn More", to: "#code_genesis_description" },
         }}
       />
-      <main>
-        <div>Put description here.</div>
-        <div className="row margin--lg" style={{ height: "100%" }}>
+      <main className="container">
+        <div
+          className="margin-top--md"
+          style={{ scrollMarginTop: "calc(60px + 1rem)" }}
+          id="code_genesis_description"
+        >
+          <Description
+            title="Code Genesis is Just The Start"
+            description="Code Genesis Products are made to assist speedy and high quality development. From starter applications to stand alone services, our Code Genesis Products are here to lend a helping hand for developers and clients alike."
+          />
+        </div>
+        <section
+          className="row"
+          style={{
+            height: "100%",
+          }}
+        >
           {products.map((p) => (
-            <div key={p.title} className="col col--4 padding--lg">
+            <div
+              key={p.title}
+              className="col col--4 margin-vert--md"
+              style={{ scrollMarginTop: "calc(60px + 1rem)" }}
+              id="code_genesis_products"
+            >
               <ProductCard
                 title={p.title}
                 description={p.description}
@@ -134,7 +154,7 @@ const Products = () => {
               />
             </div>
           ))}
-        </div>
+        </section>
       </main>
     </Layout>
   );

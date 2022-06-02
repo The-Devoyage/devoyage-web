@@ -7,7 +7,6 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
 }
@@ -25,18 +24,11 @@
   opacity: 0.05;
 }
 
-.boatDiv {
-    z-index: 1;
-    bottom: 0px;
-    position: absolute;
-    right: 0px;
-    max-width: 60%;
-}
-
 .boat{
-  width: 60%;
+  padding-top: 20px;
+  display: flex;
 	animation: boat 10s linear infinite;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 
 .waves {
@@ -72,37 +64,6 @@
   animation-duration: 20s;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-  .boat {
-    width: 35%
-  }
-  .boatDiv {
-    max-width: 100% !important;
-    bottom: 20 !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .waves {
-    height:40px;
-    min-height:40px;
-  }
-  .boat {
-    width: 40% !important;
-  }
-  .boatDiv {
-    bottom: -10px !important;
-  }
-}
-
-@media (max-width: 500px) {
-  .boat {
-    width: 70% !important;
-  }
-}
 
 @keyframes boat{
 	0%{

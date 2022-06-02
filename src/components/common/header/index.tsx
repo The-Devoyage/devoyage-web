@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import styles from "./styles.module.css";
+import styles from "./index.module.css";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
 
@@ -16,34 +16,52 @@ interface HeaderProps {
       to: string;
     };
   };
-  image: any;
+  Svg: any;
 }
 
-export const Header: FC<HeaderProps> = ({ title, tagline, buttons, image }) => {
+export const Header: FC<HeaderProps> = ({ title, tagline, buttons, Svg }) => {
   return (
-    <header className={clsx("hero hero--light shadow--tl", styles.heroBanner)}>
-      <div
-        className="row row--no-gutters"
-        style={{ width: "100%", zIndex: 100 }}
-      >
-        <div className="col col--7">
-          <h1 className="hero__title margin-vert--lg">{title}</h1>
+    <header className={clsx("shadow--tl", styles.heroBanner)}>
+      <div className="row">
+        <div
+          className="col col--6"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
+            position: "relative",
+            zIndex: 100,
+          }}
+        >
+          <h1 className="hero__title margin-bottom--lg">{title}</h1>
           <p className="hero__subtitle margin-vert--lg padding--lg">
             {tagline}
           </p>
-          <Link to={buttons.left.to}>
-            <button className="button button--primary button--lg">
-              {buttons.left.label}
-            </button>
-          </Link>
-          <Link to={buttons.right.to}>
-            <button className="button button--secondary button--outline button--lg margin-horiz--md">
-              {buttons.right.label}
-            </button>
-          </Link>
+          <div>
+            <Link to={buttons.left.to}>
+              <button className="button button--primary button--lg">
+                {buttons.left.label}
+              </button>
+            </Link>
+            <Link to={buttons.right.to}>
+              <button className="button button--secondary button--outline button--lg margin-horiz--md">
+                {buttons.right.label}
+              </button>
+            </Link>
+          </div>
         </div>
-        <div className={clsx(styles.boatDiv, "container col col--5")}>
-          <img src={image} className={clsx("col col--8", styles.boat)} />
+        <div
+          className="col col--6"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "flex-end",
+            zIndex: 1,
+            position: "relative",
+          }}
+        >
+          <Svg className={clsx(styles.boat)} />
         </div>
       </div>
       <div>
