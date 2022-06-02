@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdevoyage_web=self.webpackChunkdevoyage_web||[]).push([[244],{3848:function(e){e.exports=JSON.parse('{"label":"hello","permalink":"/devoyage-web/blog/tags/hello","allTagsPath":"/devoyage-web/blog/tags","count":1}')}}]);
