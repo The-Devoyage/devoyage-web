@@ -34,11 +34,11 @@ const services: { name: string; description: ReactNode; badges: string[] }[] = [
     name: "Copy",
     description: (
       <>
-        Description is a bit longer so maybe make this section a bit bigger but
-        we want everything to be on one line
+        Connect with writing specialists to create descriptions and content that
+        represents your product accuratly.
       </>
     ),
-    badges: ["ANDREW", "TAGS"],
+    badges: ["Writing", "Text"],
   },
   {
     name: "Design",

@@ -48,8 +48,8 @@ const FeatureList: FeatureItem[] = [
       <>
         Keep the code you get, modify it to fit your needs, and always have
         access to the most up to date versions of our products. We are not a
-        Software as a Subscription business, so you do not loose your code when
-        you choose to stop paying. You own your code -- the way it should be.
+        Software as a Subscription business, so you do not lose your code when
+        you choose to stop paying. You own your code, the way it should be.
       </>
     ),
   },

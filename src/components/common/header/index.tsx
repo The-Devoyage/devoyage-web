@@ -34,18 +34,18 @@ export const Header: FC<HeaderProps> = ({ title, tagline, buttons, Svg }) => {
             zIndex: 100,
           }}
         >
-          <h1 className="hero__title margin-bottom--lg">{title}</h1>
+          <h1 className="hero__title margin--lg">{title}</h1>
           <p className="hero__subtitle margin-vert--lg padding--lg">
             {tagline}
           </p>
           <div>
             <Link to={buttons.left.to}>
-              <button className="button button--primary button--lg">
+              <button className="button button--primary button--lg margin-vert--md">
                 {buttons.left.label}
               </button>
             </Link>
             <Link to={buttons.right.to}>
-              <button className="button button--secondary button--outline button--lg margin-horiz--md">
+              <button className="button button--secondary button--outline button--lg margin-horiz--md margin-vert--md">
                 {buttons.right.label}
               </button>
             </Link>

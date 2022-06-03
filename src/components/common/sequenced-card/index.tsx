@@ -105,9 +105,9 @@ export const SequencedCard: FC<SequencedCardProps> = ({ seconds, cards }) => {
             </div>
           </div>
           <div className="card__footer">
-            <Link to="/contact">
+            <Link href="https://thedevoyage.gumroad.com/l/itemized-estimate">
               <button className="button button--primary button--block">
-                Contact Us
+                Free Consultation
               </button>
             </Link>
           </div>

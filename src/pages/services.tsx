@@ -14,7 +14,10 @@ const Services = () => {
         tagline="An Open Ocean of Opportunities for your Business Plans"
         Svg={Wrenches}
         buttons={{
-          left: { label: "Free Consultation", to: "#services_contact" },
+          left: {
+            label: "Free Consultation",
+            to: "https://thedevoyage.gumroad.com/l/itemized-estimate",
+          },
           right: { label: "Learn More", to: "#services_description" },
         }}
       />
@@ -57,9 +60,9 @@ const Services = () => {
               header: "Itemized Estimate",
               body: (
                 <h3>
-                  Every client receives a free Itemized Estimate, in which we
-                  lay out a professional plan in clear and simple terms that
-                  anyone can follow.
+                  Every client receives a Itemized Estimate, in which we lay out
+                  a professional plan in clear and simple terms that anyone can
+                  follow.
                   <br />
                   <br />
                   You get an accurate quote and timeline alongside a clear idea
@@ -85,7 +88,7 @@ const Services = () => {
             },
             {
               pill: "Develop",
-              header: "The SOW",
+              header: "Let's Code",
               body: (
                 <h3>
                   Once you are happy with the plan and design, it is finally

@@ -59,7 +59,7 @@ const config = {
         path: "gateway",
         routeBasePath: "gateway",
         sidebarPath: require.resolve("./sidebars/sidebarsGateway.js"),
-        editUrl: "https://www.github.com/The-Devoyage/devoyage",
+        editUrl: "https://www.github.com/The-Devoyage/devoyage-web",
       },
     ],
     [
@@ -69,6 +69,7 @@ const config = {
         path: "accounts",
         routeBasePath: "accounts",
         sidebarPath: require.resolve("./sidebars/sidebarsAccounts.js"),
+        editUrl: "https://www.github.com/The-Devoyage/devoyage-web",
       },
     ],
   ],
@@ -103,10 +104,6 @@ const config = {
             label: "Docs",
             items: [
               {
-                label: "fullstack",
-                to: "/fullstack/fullstack-intro",
-              },
-              {
                 label: "gateway",
                 to: "/gateway/gateway-intro",
               },
@@ -116,7 +113,7 @@ const config = {
               },
             ],
           },
-          { to: "/blog", label: "Blog", position: "right" },
+          // { to: "/blog", label: "Blog", position: "right" },
           {
             href: "https://github.com/The-Devoyage",
             label: "GitHub",
@@ -152,25 +149,25 @@ const config = {
             items: [
               {
                 label: "Slack",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                href: "https://thedevoyage.slack.com",
               },
               {
                 label: "Medium",
-                href: "https://discordapp.com/invite/docusaurus",
+                href: "https://medium.com/@thedevoyage",
               },
               {
                 label: "Gumroad",
-                href: "https://twitter.com/docusaurus",
+                href: "https://thedevoyage.gumroad.com/",
               },
             ],
           },
           {
             title: "More",
             items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
+              // {
+              //   label: "Blog",
+              //   to: "/blog",
+              // },
               {
                 label: "GitHub",
                 href: "https://github.com/The-Devoyage",
@@ -178,7 +175,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} The Devoyage, Inc.`,
+        copyright: `Copyright © ${new Date().getFullYear()} The Devoyage, LLC.`,
       },
       prism: {
         theme: lightCodeTheme,
