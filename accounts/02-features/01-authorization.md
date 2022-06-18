@@ -1,5 +1,5 @@
 ---
-id: accounts-features-authorization
+id: authorization
 title: Authentication Features
 ---
 

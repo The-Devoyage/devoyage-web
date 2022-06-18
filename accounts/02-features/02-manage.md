@@ -1,5 +1,5 @@
 ---
-id: accounts-features-manage
+id: manage
 title: Manage Accounts
 ---
 

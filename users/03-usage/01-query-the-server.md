@@ -1,5 +1,5 @@
 ---
-id: accounts-usage-query-the-server
+id: query-the-server
 title: Query The Server
 ---
 
@@ -34,3 +34,18 @@ While the user and account `_id` and `email` properties remain fairly straight f
 
 - Admin === 1
 - General User === 10
+
+## Extended Properties/Required Services
+
+The users service extends federated entities from external services. The following federated services and properties are required in order to run this service.
+
+Account
+
+- \_id
+- email
+
+Media
+
+- \_id
+
+You may manually remove the entities, if not needed.

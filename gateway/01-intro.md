@@ -1,5 +1,5 @@
 ---
-id: gateway-intro
+id: intro
 title: GraphQL Gateway
 ---
 

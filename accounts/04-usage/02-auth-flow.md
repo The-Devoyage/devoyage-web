@@ -1,5 +1,5 @@
 ---
-id: accounts-usage-auth-flow
+id: auth-flow
 title: Auth Flow
 ---
 
