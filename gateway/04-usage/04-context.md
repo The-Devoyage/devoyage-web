@@ -1,5 +1,5 @@
 ---
-id: gateway-usage-configure-context
+id: configure-context
 title: Configure Context
 ---
 

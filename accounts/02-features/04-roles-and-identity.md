@@ -1,5 +1,5 @@
 ---
-id: accounts-features-query-the-server
+id: query-the-server
 title: Roles and Identities
 ---
 

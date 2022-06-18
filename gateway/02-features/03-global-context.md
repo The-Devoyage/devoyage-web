@@ -1,5 +1,5 @@
 ---
-id: gateway-features-global-context
+id: global-context
 title: Global Context
 ---
 

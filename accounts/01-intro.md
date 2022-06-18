@@ -1,5 +1,5 @@
 ---
-id: accounts-intro
+id: intro
 title: GraphQL Accounts
 ---
 

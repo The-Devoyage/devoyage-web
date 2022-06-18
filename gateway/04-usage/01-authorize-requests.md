@@ -1,5 +1,5 @@
 ---
-id: gateway-usage-authorize-requests
+id: authorize-requests
 title: Authorize Requests
 ---
 

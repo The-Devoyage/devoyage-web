@@ -1,5 +1,5 @@
 ---
-id: gateway-features-authorization-by-default
+id: authorization-by-default
 title: Authorization By Default
 ---
 

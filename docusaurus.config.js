@@ -38,11 +38,13 @@ const config = {
           path: "fullstack",
           routeBasePath: "fullstack",
           sidebarPath: require.resolve("./sidebars/sidebarsFullstack.js"),
-          editUrl: "https://github.com/the-devoyage",
+          editUrl:
+            "https://www.github.com/The-Devoyage/devoyage-web/blob/master",
         },
         blog: {
           showReadingTime: true,
-          editUrl: "https://github.com/the-devoyage",
+          editUrl:
+            "https://www.github.com/The-Devoyage/devoyage-web/blob/master",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -59,7 +61,7 @@ const config = {
         path: "gateway",
         routeBasePath: "gateway",
         sidebarPath: require.resolve("./sidebars/sidebarsGateway.js"),
-        editUrl: "https://www.github.com/The-Devoyage/devoyage-web",
+        editUrl: "https://www.github.com/The-Devoyage/devoyage-web/blob/master",
       },
     ],
     [
@@ -69,7 +71,37 @@ const config = {
         path: "accounts",
         routeBasePath: "accounts",
         sidebarPath: require.resolve("./sidebars/sidebarsAccounts.js"),
-        editUrl: "https://www.github.com/The-Devoyage/devoyage-web",
+        editUrl: "https://www.github.com/The-Devoyage/devoyage-web/blob/master",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "users",
+        path: "users",
+        routeBasePath: "users",
+        sidebarPath: require.resolve("./sidebars/sidebarsUsers.js"),
+        editUrl: "https://www.github.com/The-Devoyage/devoyage-web/blob/master",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "mailer",
+        path: "mailer",
+        routeBasePath: "mailer",
+        sidebarPath: require.resolve("./sidebars/sidebarsMailer.js"),
+        editUrl: "https://www.github.com/The-Devoyage/devoyage-web/blob/master",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "media",
+        path: "media",
+        routeBasePath: "media",
+        sidebarPath: require.resolve("./sidebars/sidebarsMedia.js"),
+        editUrl: "https://www.github.com/The-Devoyage/devoyage-web/blob/master",
       },
     ],
   ],
@@ -104,12 +136,24 @@ const config = {
             label: "Docs",
             items: [
               {
-                label: "gateway",
-                to: "/gateway/gateway-intro",
+                label: "Gateway",
+                to: "/gateway/intro",
               },
               {
-                label: "accounts",
-                to: "/accounts/accounts-intro",
+                label: "Accounts",
+                to: "/accounts/intro",
+              },
+              {
+                label: "Users",
+                to: "/users/intro",
+              },
+              {
+                label: "Media",
+                to: "/media/intro",
+              },
+              {
+                label: "Mailer",
+                to: "/mailer/intro",
               },
             ],
           },

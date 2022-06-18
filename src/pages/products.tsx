@@ -43,7 +43,7 @@ const products: ProductInfo[] = [
         label: "GitHub",
         to: "https://github.com/The-Devoyage/graphql-gateway",
       },
-      { label: "Docs", to: "/gateway/gateway-intro" },
+      { label: "Docs", to: "/gateway/intro" },
     ],
     tags: ["Security", "Request Routing", "Secure Proxies"],
   },
@@ -58,7 +58,7 @@ const products: ProductInfo[] = [
         label: "GitHub",
         to: "https://www.github.com/the-devoyage/graphql-accounts",
       },
-      { label: "Docs", to: "/accounts/accounts-intro" },
+      { label: "Docs", to: "/accounts/intro" },
     ],
     tags: ["Authenticate", "Secure", "Identify"],
   },
@@ -73,7 +73,7 @@ const products: ProductInfo[] = [
         label: "GitHub",
         to: "https://www.github.com/the-devoyage/graphql-users",
       },
-      { label: "Docs (soon!)" },
+      { label: "Docs", to: "/users/intro" },
     ],
     tags: ["User Data", "Memberships", "Profiles", "Identity"],
   },
@@ -114,7 +114,7 @@ const Products = () => {
     <Layout>
       <Header
         title="Code Genesis"
-        tagline="Pre-built -- Pre-Tested & Easy to Integrate"
+        tagline="Pre-built - Pre-Tested & Easy to Integrate"
         Svg={TechCog}
         buttons={{
           left: { label: "Our Products", to: "#code_genesis_products" },
@@ -129,7 +129,14 @@ const Products = () => {
         >
           <Description
             title="Code Genesis is Just The Start"
-            description="Code Genesis Products are made to assist speedy and high quality development. From starter applications to stand alone services, our Code Genesis Products are here to lend a helping hand for developers and clients alike."
+            description={
+              <>
+                Code Genesis Products are made to assist speedy and high quality
+                development. From starter applications to stand alone services,
+                our Code Genesis Products are here to lend a helping hand for
+                your next project.
+              </>
+            }
           />
         </div>
         <section

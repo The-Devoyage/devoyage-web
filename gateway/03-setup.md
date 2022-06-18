@@ -1,5 +1,5 @@
 ---
-id: gateway-setup
+id: setup
 title: Setting Up The Gateway
 ---
 

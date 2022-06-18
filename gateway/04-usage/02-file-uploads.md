@@ -1,5 +1,5 @@
 ---
-id: gateway-usage-file-uploads
+id: file-uploads
 title: File Uploading
 ---
 

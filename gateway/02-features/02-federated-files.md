@@ -1,5 +1,5 @@
 ---
-id: gateway-features-federated-file-uploads
+id: federated-file-uploads
 title: Federated File Uploads
 ---
 

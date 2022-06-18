@@ -1,5 +1,5 @@
 ---
-id: gateway-usage-file-serving
+id: file-serving
 title: File Serving
 ---
 

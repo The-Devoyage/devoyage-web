@@ -1,5 +1,5 @@
 ---
-id: accounts-features-request-account-data
+id: request-account-data
 title: Request Account(s) Data
 ---
 
