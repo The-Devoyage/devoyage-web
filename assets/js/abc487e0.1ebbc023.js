@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdevoyage_web=self.webpackChunkdevoyage_web||[]).push([[475],{7272:function(e){e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"gateway"}')}}]);
