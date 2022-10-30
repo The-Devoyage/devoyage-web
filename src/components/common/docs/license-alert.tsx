@@ -14,7 +14,7 @@ export const LicenseAlert: FC<{ product: string; to: string }> = ({
         alignItems: "center",
       }}
     >
-      Want to use `@the-devoyage/{product}` in production?
+      Want to support `@the-devoyage/{product}`?
       <Link to={to}>
         <button className="button button--primary">Purchase MIT License</button>
       </Link>

@@ -43,7 +43,7 @@ In development
 npm run dev
 ```
 
-or In Production
+In Production
 
 ```bash
 npm start

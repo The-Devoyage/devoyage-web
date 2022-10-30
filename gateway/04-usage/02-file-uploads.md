@@ -16,6 +16,8 @@ You should only use this feature for hobby based projects, as CSRF attacks are p
 Use the `Upload` scalar, provided by the `@profusion/apollo-federation-upload` library, within the federated micro service in order enable multi part file uploading.
 
 ```ts
+// External/Custom Upload server
+
 const Mutation = gql`
   scalar Upload
 

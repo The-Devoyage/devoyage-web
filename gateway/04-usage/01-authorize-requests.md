@@ -46,7 +46,7 @@ While this service does not provide methods to create JWTs, you can use the `@th
 From within the external connected Federated Service, the authorization status is available from within the context object inside a Resolver.
 
 ```ts
-// Accounts Service
+// External/Custom Accounts Service
 
 getMyAccount: async (_parent, _args, context) => {
   const authContext = context.auth;
@@ -55,6 +55,6 @@ getMyAccount: async (_parent, _args, context) => {
     throw new Error("NOT AUTHENTICATED!");
   }
 
-  // ...get account
+  // ...get account logic
 };
 ```
