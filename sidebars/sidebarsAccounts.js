@@ -16,12 +16,12 @@ const sidebars = {
     {
       type: "html",
       value:
-        '<a target="_blank" href="https://thedevoyage.gumroad.com/l/graphql-accounts"><button class="button button--primary button--block margin-vert--sm">Purchase MIT License</button></a>',
-    },
-    {
-      type: "html",
-      value:
-        '<a target="_blank" href="https://thedevoyage.gumroad.com/l/graphql-accounts"><button class="button button--success button--block">Support The Project</button>',
+        `
+        <div>
+          <a target="_blank" href="https://thedevoyage.gumroad.com/l/graphql-accounts"><button class="button button--primary button--block margin-vert--sm">Purchase MIT Licensee</button></a>
+          <a target="_blank" href="https://thedevoyage.gumroad.com/l/graphql-accounts"><button class="button button--success button--block">Support The Project</button>
+        <div>
+      `,
     },
   ],
 };

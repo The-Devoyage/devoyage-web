@@ -88,7 +88,7 @@ export const ServicesList = () => {
     <>
       <div className="card margin-bottom--md shadow--md">
         <div className="card__header text--center">
-          <h2>Our Services</h2>
+          <h2>Services</h2>
         </div>
         <div className="card__body">
           {services.map((s) => (

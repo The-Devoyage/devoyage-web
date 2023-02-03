@@ -4,8 +4,21 @@
  * work well for content-centric websites.
  */
 
+@font-face {
+  font-family: "Nunito";
+  src: url("/font/Nunito/Nunito-VariableFont_wght.ttf");
+}
+
 html {
   scroll-behavior: smooth;
+  font-family: "Nunito";
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Nunito";
 }
 
 /* You can override the default Infima variables here. */
@@ -26,7 +39,7 @@ html {
   --ifm-color-secondary-light: #d2dcef;
   --ifm-color-secondary-lighter: #e1e8f4;
   --ifm-color-secondary-lightest: #ffffff;
-            
+
   --ifm-color-success: #5ecf58;
   --ifm-color-success-dark: #48c841;
   --ifm-color-success-darker: #3fc338;
@@ -43,11 +56,57 @@ html {
 
   /* Buttons */
   --ifm-button-border-radius: 0.25rem;
+}
 
+.background--overlay::before {
+  content: "";
+  background-image: url("@site/static/img/overlay.svg");
+  background-repeat: "no-repeat";
+  background-size: "cover";
+  position: absolute;
+  top: -40px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.1;
+  animation: floating 240s infinite;
+}
+
+.background--overlay.blur:before {
+  filter: blur(3px);
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+  35% {
+    transform: translate(100px, 15px);
+    rotate: 5deg;
+  }
+
+  50% {
+    transform: translate(-100px, 5px);
+  }
+
+  75% {
+    transform: translate(10px, 12px);
+    rotate: -10deg;
+  }
+
+  to {
+    transform: translate(0, -0px);
+    rotate: 0deg;
+  }
 }
 
 .badge--secondary {
   color: black;
+}
+
+.navbar,
+.navbar-sidebar {
+  z-index: 9999;
 }
 
 .navbar__title {
@@ -58,8 +117,24 @@ html {
   text-transform: capitalize;
 }
 
+li:nth-last-of-type(1) {
+  position: relative;
+  bottom: 0;
+}
+
+.badge--link {
+  transition: background-color 0.5s, border-color 0.5s;
+}
+
+.badge--link:active,
+.badge--link:hover {
+  color: black;
+  background-color: var(--ifm-color-secondary-darker);
+  border-color: var(--ifm-color-secondary-darker);
+}
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-primary: #ffbd4a;
   --ifm-color-primary-dark: #ffb129;
   --ifm-color-primary-darker: #ffab19;

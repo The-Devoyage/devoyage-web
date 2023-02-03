@@ -7,7 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "The Devoyage",
-  tagline: "Code Genesis Micro Services & Development Services",
+  tagline: "Code Genesis Micro Services for Speedy Self Owned Web Dev",
   url: "https://www.thedevoyage.com",
   baseUrl: "/",
   onBrokenLinks: "ignore",
@@ -54,6 +54,16 @@ const config = {
   ],
 
   plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "orions-arrow",
+        path: "orions-arrow",
+        routeBasePath: "orions-arrow",
+        sidebarPath: require.resolve("./sidebars/sidebarsOrionsArrow.js"),
+        editUrl: "https://www.github.com/The-Devoyage/devoyage-web/blob/master",
+      },
+    ],
     [
       "@docusaurus/plugin-content-docs",
       {
@@ -149,6 +159,10 @@ const config = {
               {
                 label: "Mailer",
                 to: "/mailer/intro",
+              },
+              {
+                label: "Orion's Arrow",
+                to: "/orions-arrow/intro",
               },
             ],
           },

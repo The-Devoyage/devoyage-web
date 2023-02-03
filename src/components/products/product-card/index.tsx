@@ -23,6 +23,8 @@ export const ProductCard: FC<ProductCardProps> = ({
         display: "flex",
         justifyContent: "space-between",
         height: "100%",
+        position: "relative",
+        zIndex: 200,
       }}
     >
       <div className="card__image">

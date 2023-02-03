@@ -4,7 +4,7 @@ import { Header } from "@site/src/components/common/header";
 import { Description } from "../components/common/description";
 import { SequencedCard } from "../components/common/sequenced-card";
 import { ServicesList } from "../components/services/services-list";
-const Wrenches = require("@site/static/img/wrenches.svg").default;
+import { default as Wrenches } from "@site/static/img/wrenches.svg";
 
 const Services = () => {
   return (
@@ -23,7 +23,7 @@ const Services = () => {
       />
       <main className="container">
         <div
-          className="margin-top--md"
+          className="margin-top--md background--overlay"
           style={{ scrollMarginTop: "calc(60px + 1rem)" }}
           id="services_description"
         >

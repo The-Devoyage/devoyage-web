@@ -3,7 +3,7 @@ import React from "react";
 import { Header } from "@site/src/components/common/header";
 import { ProductCard } from "../components/products/product-card";
 import { Description } from "../components/common/description";
-const TechCog = require("@site/static/img/tech-cog.svg").default;
+import { default as TechCog } from "@site/static/img/tech-cog.svg";
 
 interface ProductInfo {
   title: string;
@@ -15,20 +15,26 @@ interface ProductInfo {
 
 const products: ProductInfo[] = [
   {
-    title: "Orions Arrow",
+    title: "Orion's Arrow",
     description:
-      "A fully featured API, ready to deploy Admin Panel, and a React Starter -- Everything that The Devoyage has to offer bundled in one easy to spin up bundle.",
+      "A SDK to Easily Connect React Applications to the Code Genesis APIs.",
     image:
-      "https://res.cloudinary.com/the-devoyage/image/upload/c_lpad,h_300,w_600/v1653517435/The-Devoyage/full-stack-logo_yklrpi.jpg",
-    links: [{ label: "Coming Soon" }],
-    tags: ["Searchable API", "Admin Panel", "Website Starter"],
+      "https://res.cloudinary.com/the-devoyage/image/upload/c_pad,h_300,w_600/v1667677652/The-Devoyage/Orion_s_Arrow_vxpcsl.png",
+    links: [
+      {
+        label: "GitHub",
+        to: "https://github.com/The-Devoyage/orions-arrow",
+      },
+      { label: "Docs", to: "/orions-arrow/intro" },
+    ],
+    tags: ["SDK", "React"],
   },
   {
     title: "Admin Starter",
     description:
       "Using any of the code genesis products? The Admin starter instantly connects and allows you to manage Accounts, Users, Media, and more.",
     image:
-      "https://res.cloudinary.com/the-devoyage/image/upload/c_fill,h_300,w_600/v1653518309/The-Devoyage/admin_l1yxsd.png",
+      "https://res.cloudinary.com/the-devoyage/image/upload/c_pad,h_300,w_600/v1653518309/The-Devoyage/admin_l1yxsd.png",
     links: [{ label: "Coming Soon" }],
     tags: ["Manage Data", "Website Statistics"],
   },
@@ -82,7 +88,7 @@ const products: ProductInfo[] = [
     description:
       "Upload and serve files and images with this federated micro-service.",
     image:
-      "https://res.cloudinary.com/the-devoyage/image/upload/c_fill,h_300,w_600/v1653515788/The-Devoyage/graphql-media_jwuhfx.png",
+      "https://res.cloudinary.com/the-devoyage/image/upload/c_pad,h_300,w_600/v1653515788/The-Devoyage/graphql-media_jwuhfx.png",
     links: [
       {
         label: "GitHub",
@@ -97,7 +103,7 @@ const products: ProductInfo[] = [
     description:
       "An automated mailing server that listens for triggers in order to send your users custom HTML content.",
     image:
-      "https://res.cloudinary.com/the-devoyage/image/upload/c_fill,h_300,w_600/v1653515776/The-Devoyage/graphql-mailer_rebml7.jpg",
+      "https://res.cloudinary.com/the-devoyage/image/upload/c_pad,h_300,w_600/v1667792598/The-Devoyage/Mailer_kvhivi.png",
     links: [
       {
         label: "GitHub",
@@ -113,17 +119,17 @@ const Products = () => {
   return (
     <Layout>
       <Header
-        title="Code Genesis"
-        tagline="Pre-built - Pre-Tested & Easy to Integrate"
+        title="Code Genesis Products"
+        tagline="Ready to Integrate Micro Services, Libraries, and Management Interfaces"
         Svg={TechCog}
         buttons={{
-          left: { label: "Our Products", to: "#code_genesis_products" },
+          left: { label: "Products", to: "#code_genesis_products" },
           right: { label: "Learn More", to: "#code_genesis_description" },
         }}
       />
-      <main className="container">
+      <main className="container" style={{ position: "relative" }}>
         <div
-          className="margin-top--md"
+          className="margin-top--md background--overlay blur"
           style={{ scrollMarginTop: "calc(60px + 1rem)" }}
           id="code_genesis_description"
         >

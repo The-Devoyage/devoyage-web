@@ -21,24 +21,16 @@ interface HeaderProps {
 
 export const Header: FC<HeaderProps> = ({ title, tagline, buttons, Svg }) => {
   return (
-    <header className={clsx("shadow--tl", styles.heroBanner)}>
+    <header
+      className={clsx("shadow--tl", styles.heroBanner, "background--overlay")}
+    >
       <div className="row">
-        <div
-          className="col col--6"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "column",
-            position: "relative",
-            zIndex: 100,
-          }}
-        >
+        <div className={clsx("col col--6 padding-left--xl", styles.headerLeft)}>
           <h1 className="hero__title margin--lg">{title}</h1>
-          <p className="hero__subtitle margin-vert--lg padding--lg">
-            {tagline}
-          </p>
-          <div>
+          <div className="margin--lg">
+            <p className="hero__subtitle">{tagline}</p>
+          </div>
+          <div className="margin--lg">
             <Link to={buttons.left.to}>
               <button className="button button--primary button--lg margin-vert--md">
                 {buttons.left.label}
