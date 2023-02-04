@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdevoyage_web=self.webpackChunkdevoyage_web||[]).push([[2535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"v0.0.3 - Reusable Resolvers with an API Generator Built in Rust","permalink":"/blog/v0.0.3-reusable-resolvers"}]}')}}]);
