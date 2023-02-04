@@ -58,6 +58,13 @@ h4 {
   --ifm-button-border-radius: 0.25rem;
 }
 
+/* Navbar */
+.navbar--dark {
+  --ifm-navbar-background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  width: 100%;
+}
+
 .background--overlay::before {
   content: "";
   background-image: url("@site/static/img/overlay.svg");
@@ -69,11 +76,6 @@ h4 {
   bottom: 0px;
   left: 0px;
   opacity: 0.1;
-  animation: floating 240s infinite;
-}
-
-.background--overlay.blur:before {
-  filter: blur(3px);
 }
 
 @keyframes floating {

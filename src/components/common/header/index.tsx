@@ -22,39 +22,49 @@ interface HeaderProps {
 export const Header: FC<HeaderProps> = ({ title, tagline, buttons, Svg }) => {
   return (
     <header
-      className={clsx("shadow--tl", styles.heroBanner, "background--overlay")}
+      className={clsx("shadow--tl", styles.header, "background--overlay")}
     >
-      <div className="row">
-        <div className={clsx("col col--6 padding-left--xl", styles.headerLeft)}>
-          <h1 className="hero__title margin--lg">{title}</h1>
-          <div className="margin--lg">
-            <p className="hero__subtitle">{tagline}</p>
-          </div>
-          <div className="margin--lg">
-            <Link to={buttons.left.to}>
-              <button className="button button--primary button--lg margin-vert--md">
+      <div className={clsx(styles.tagline_container)}>
+        <div className={clsx(styles.tagline_flex)}>
+          <h1 className={clsx(styles.title)}>{title}</h1>
+          <p
+            className={clsx(styles.tagline)}
+            style={{
+              width: "75%",
+            }}
+          >
+            {tagline}
+          </p>
+          <div className={clsx("row", styles.button_container)}>
+            <Link
+              to={buttons.left.to}
+              className={clsx(styles.link, "col col--6")}
+            >
+              <button
+                className={clsx(
+                  "button button--primary button--block button--lg margin-vert--md"
+                )}
+              >
                 {buttons.left.label}
               </button>
             </Link>
-            <Link to={buttons.right.to}>
-              <button className="button button--secondary button--outline button--lg margin-horiz--md margin-vert--md">
+            <Link
+              to={buttons.right.to}
+              className={clsx(styles.link, "col col--6")}
+            >
+              <button
+                className={clsx(
+                  "button button--secondary button--block button--outline button--lg margin-vert--md"
+                )}
+              >
                 {buttons.right.label}
               </button>
             </Link>
           </div>
         </div>
-        <div
-          className="col col--6"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "flex-end",
-            zIndex: 1,
-            position: "relative",
-          }}
-        >
-          <Svg className={clsx(styles.boat)} />
-        </div>
+      </div>
+      <div className={clsx(styles.svg_container)}>
+        <Svg className={clsx(styles.boat)} />
       </div>
       <div>
         <svg

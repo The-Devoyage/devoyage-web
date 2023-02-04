@@ -7,7 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "The Devoyage",
-  tagline: "Code Genesis Micro Services for Speedy Self Owned Web Dev",
+  tagline: "Code Genesis is Just The Start",
   url: "https://www.thedevoyage.com",
   baseUrl: "/",
   onBrokenLinks: "ignore",
@@ -135,6 +135,11 @@ const config = {
             to: "/products",
             position: "right",
             label: "Code Genesis",
+          },
+          {
+            to: "https://medium.com/@thedevoyage",
+            position: "right",
+            label: "Blog"
           },
           {
             position: "right",
