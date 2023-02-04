@@ -61,8 +61,6 @@ h4 {
 /* Navbar */
 .navbar--dark {
   --ifm-navbar-background-color: rgba(0, 0, 0, 0);
-  position: absolute;
-  width: 100%;
 }
 
 .background--overlay::before {
@@ -71,7 +69,7 @@ h4 {
   background-repeat: "no-repeat";
   background-size: "cover";
   position: absolute;
-  top: -40px;
+  top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
@@ -145,4 +143,10 @@ li:nth-last-of-type(1) {
   --ifm-color-primary-lighter: #ffcf7b;
   --ifm-color-primary-lightest: #ffe1ad;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 415px) {
+  .navbar--dark {
+    --ifm-navbar-background-color: unset;
+  }
 }

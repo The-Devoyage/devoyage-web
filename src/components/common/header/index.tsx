@@ -21,9 +21,7 @@ interface HeaderProps {
 
 export const Header: FC<HeaderProps> = ({ title, tagline, buttons, Svg }) => {
   return (
-    <header
-      className={clsx("shadow--tl", styles.header, "background--overlay")}
-    >
+    <header className={clsx("shadow--tl", styles.header)}>
       <div className={clsx(styles.tagline_container)}>
         <div className={clsx(styles.tagline_flex)}>
           <h1 className={clsx(styles.title)}>{title}</h1>

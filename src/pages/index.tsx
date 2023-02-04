@@ -11,11 +11,10 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout title={siteConfig.title} description="Welcome to The Devoyage">
+      <div className="background--overlay" />
       <Header
         title={siteConfig.tagline}
-        tagline={
-          "Development Products, Services, and Articles for Streamlined Coding"
-        }
+        tagline={"Products, Services, and Articles for Streamlined Coding"}
         Svg={Ship}
         buttons={{
           left: { label: "Get Started", to: "#homepage_description" },
