@@ -136,11 +136,7 @@ const config = {
             position: "right",
             label: "Code Genesis",
           },
-          {
-            to: "https://medium.com/@thedevoyage",
-            position: "right",
-            label: "Blog"
-          },
+          { to: 'blog', label: 'Blog', position: 'right' },
           {
             position: "right",
             label: "Docs",
