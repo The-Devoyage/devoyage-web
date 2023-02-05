@@ -135,13 +135,16 @@ function Feature({ title, Svg, description, button, links }: FeatureItem) {
         <div className="container">
           <div className="row">
             {links?.map((l, i) => (
-              <div className="col col--3" key={i}>
+              <div className="col col--3 margin-vert--md" key={i}>
                 <Link to={l.url}>
-                  <div className="card" style={{ height: "100%" }}>
+                  <div
+                    className="card"
+                    style={{ height: "100%", color: "white" }}
+                  >
                     <div className="card__header text--center">
                       <h3>{l.title}</h3>
                     </div>
-                    <div className="card__body">
+                    <div className="card__body text--center">
                       <img src={l.image} />
                     </div>
                     <div className="card__footer">{l.description}</div>
