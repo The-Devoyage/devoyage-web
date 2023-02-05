@@ -80,7 +80,6 @@
   z-index: 1;
   position: absolute;
   width: 100%;
-  right: 200;
   bottom: 0;
   display: flex;
   justify-content: end;
@@ -90,7 +89,7 @@
   padding-top: 20px;
   display: flex;
   animation: boat 10s linear infinite;
-  max-height: 400px;
+  max-height: 300px;
 }
 
 @keyframes boat {

@@ -118,9 +118,10 @@ const products: ProductInfo[] = [
 const Products = () => {
   return (
     <Layout>
+      <div className="background--overlay" />
       <Header
         title="Code Genesis Products"
-        tagline="Ready to Integrate Micro Services, Libraries, and Management Interfaces"
+        tagline="Micro Services, Libraries, and More"
         Svg={TechCog}
         buttons={{
           left: { label: "Products", to: "#code_genesis_products" },

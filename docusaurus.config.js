@@ -117,7 +117,6 @@ const config = {
   ],
 
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       colorMode: {
         defaultMode: "dark",
@@ -134,7 +133,7 @@ const config = {
           {
             to: "/products",
             position: "right",
-            label: "Code Genesis",
+            label: "Products",
           },
           { to: 'blog', label: 'Blog', position: 'right' },
           {
@@ -190,11 +189,11 @@ const config = {
               },
               {
                 label: "Products",
-                to: "/",
+                to: "/products",
               },
               {
                 label: "Services",
-                to: "/",
+                to: "/services",
               },
             ],
           },

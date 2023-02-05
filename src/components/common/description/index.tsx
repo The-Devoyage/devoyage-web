@@ -14,7 +14,7 @@ export const Description: FC<DescriptionProps> = ({ title, description }) => {
         className="card__body row margin-vert--lg col col--10"
         style={{ alignItems: "center" }}
       >
-        <h1 className="text--primary col col--4">{title}</h1>
+        <h1 className="col col--4">{title}</h1>
         <p className="col col--8" style={{ fontSize: "1.5rem" }}>
           {description}
         </p>

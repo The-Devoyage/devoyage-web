@@ -60,7 +60,7 @@ h4 {
 
 /* Navbar */
 .navbar--dark {
-  --ifm-navbar-background-color: rgba(0, 0, 0, 0);
+  --ifm-navbar-background-color: rgba(0, 0, 0, 0.2);
 }
 
 .background--overlay::before {

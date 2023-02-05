@@ -1,12 +1,10 @@
 ---
-slug: v0.0.3-reusable-resolvers
-title: v0.0.3 - Reusable Resolvers with an API Generator Built in Rust
+slug: subgraph-v0.0.3-reusable-resolvers
+title: Subgraph v0.0.3 - Reusable Resolvers with a GraphQL API Generator Built in Rust
 authors: [nick]
 tags: [subgraph]
 date: 2023-02-04
 ---
-
-# v0.0.3 - Reusable Resolvers with the GraphQL API Generator `Subgraph`
 
 Hello all! Thanks for joining.
 
