@@ -3,7 +3,7 @@ slug: subgraph-v0.0.4-versatile-typings
 title: Subgraph v0.0.4 - Versatile Typings for a GraphQL API Generator 
 authors: [nick]
 tags: [subgraph]
-date: 2023-02-14
+date: 2023-02-20
 ---
 
 Hello all! Thanks for joining!
