@@ -18,6 +18,7 @@ In case you are new to `Project Subgraph`, "Define to Run", is the motto. Define
 
 So, what kind of scalars are we including in this API Generator? Let's take a look.
 
+<!--truncate-->
 ## Versatile Typings
 
 Creating an API Generator needs to be versatile, yet simple. Two steps simple. 

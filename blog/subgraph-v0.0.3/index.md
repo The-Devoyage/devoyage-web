@@ -16,6 +16,7 @@ In version `v0.0.3` we are adding the ability to Find Many which is one of the r
 
 ![GraphQL Resolvers CRUD](https://res.cloudinary.com/the-devoyage/image/upload/v1675543551/The-Devoyage/CRUD_GraphQL_aaooqr.png)
 
+<!--truncate-->
 ## Reusable Resolvers
 
 The idea of an API Generator is to make creating a standardized API easy. Many parts of creating an API can be automated, including the creation of resolvers. 
