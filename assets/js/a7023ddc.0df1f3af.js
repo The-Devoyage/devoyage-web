@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdevoyage_web=self.webpackChunkdevoyage_web||[]).push([[1713],{3457:e=>{e.exports=JSON.parse('[{"label":"subgraph","permalink":"/blog/tags/subgraph","count":3}]')}}]);
