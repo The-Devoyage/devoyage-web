@@ -8,7 +8,7 @@ date: 2023-04-14
 
 Hello all -- Thanks for joining!
 
-Today we are going to use the Chat GPT API to show off the newest relase from the subgraph project, which is a tool built to help you start up a well rounded API in a matter of minutes.
+Today we are going to use the Chat GPT API to show off the newest release from the subgraph project, which is a tool built to help you start up a well rounded API in a matter of minutes.
 
 The [@The-Devoyage/subgraph](https://www.github.com/the-devoyage/subgraph) project is a proof-of-concept implementation written in Rust for generating a dynamic API from a single 
 configuration/schema.
@@ -79,11 +79,11 @@ exclude_from_output = true
 
 ### New Features
 
-- HTTP Data Source - Easilly map a HTTP API into this GraphQL API.
-- Update One Resolver - Update mongo documents or send HTTP Put/Patch Request
+- HTTP Data Source - Easily map a HTTP API into this GraphQL API.
+- Update One Resolver - Update Mongo documents or send HTTP Put/Patch Request
 - Objects and Lists - Support for more complex data structures.
 - Exclude From Input/Output - Allows fields to be shared or mapped exclusivly to resolvers input/output.
-- Environment Variable Support - Use environment varaibles directly inside your config with the `$` suffix.
+- Environment Variable Support - Use environment variables directly inside your config with the `$` suffix.
 
 ## The Chat GPT Config
 
@@ -112,7 +112,7 @@ Open browser and navigate to the port that the service was started on. `http://l
 
 ## What's Next?
 
-There is still a lot of work in order to get to v0.1.0 - Error handling, SQL Compatability, Various Scalar Support, GraphQL Subscriptions... just to name a few.
+There is still a lot of work in order to get to v0.1.0 - Error handling, SQL Compatibility, Various Scalar Support, GraphQL Subscriptions... just to name a few.
 
 So keep tuned, as v0.0.8 is under way.
 
