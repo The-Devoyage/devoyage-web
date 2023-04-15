@@ -40,7 +40,7 @@ const featureList: FeatureItem[] = [
         url: "https://www.github.com/the-devoyage/subgraph",
         title: "Subgraph (alpha release)",
         image:
-          "https://res.cloudinary.com/the-devoyage/image/upload/v1675627414/The-Devoyage/Subgraph_Logo_1_jrpnp3.png",
+          "https://res.cloudinary.com/the-devoyage/image/upload/v1681523977/Subgraph_Logo_2_gff26m.png",
         description: (
           <span>A GraphQL API Generator with the motto Define to Run.</span>
         ),

@@ -20,7 +20,7 @@ manipulate and find data, and even map third-party RESTful APIs to GraphQL autom
 
 Let's dive into the new HTTP Data Source configurations which will allow us to connect to almost any third party RESTful API, such as the Chat GPT API.
 
-![Subgraph](https://res.cloudinary.com/the-devoyage/image/upload/v1675627414/The-Devoyage/Subgraph_Logo_1_jrpnp3.png)
+![Subgraph](https://res.cloudinary.com/the-devoyage/image/upload/v1681523977/Subgraph_Logo_2_gff26m.png)
 
 <!--truncate-->
 ## v0.0.7 and the Chat GPT API
