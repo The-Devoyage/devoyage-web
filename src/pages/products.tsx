@@ -3,12 +3,12 @@ import React from "react";
 import { Header } from "@site/src/components/common/header";
 import { ProductCard } from "../components/products/product-card";
 import { Description } from "../components/common/description";
-import { default as TechCog } from "@site/static/img/tech-cog.svg";
+import { default as Ship } from "@site/static/img/logo.svg";
 
 interface ProductInfo {
   title: string;
   description: string;
-  image: any;
+  image: string;
   links?: { label: string; to?: string }[];
   tags?: string[];
 }
@@ -34,7 +34,7 @@ const products: ProductInfo[] = [
     description:
       "Using any of the code genesis products? The Admin starter instantly connects and allows you to manage Accounts, Users, Media, and more.",
     image:
-      "https://res.cloudinary.com/the-devoyage/image/upload/c_pad,h_300,w_600/v1653518309/The-Devoyage/admin_l1yxsd.png",
+      "https://res.cloudinary.com/the-devoyage/image/upload/c_pad,h_300,w_600/v1682534645/Admin_Starter_krw4hx.png",
     links: [{ label: "Coming Soon" }],
     tags: ["Manage Data", "Website Statistics"],
   },
@@ -103,7 +103,7 @@ const products: ProductInfo[] = [
     description:
       "An automated mailing server that listens for triggers in order to send your users custom HTML content.",
     image:
-      "https://res.cloudinary.com/the-devoyage/image/upload/c_pad,h_300,w_600/v1667792598/The-Devoyage/Mailer_kvhivi.png",
+      "https://res.cloudinary.com/the-devoyage/image/upload/c_pad,h_300,w_600/v1682534730/Mailer_1_yzngrl.png",
     links: [
       {
         label: "GitHub",
@@ -122,7 +122,7 @@ const Products = () => {
       <Header
         title="Code Genesis Products"
         tagline="Micro Services, Libraries, and More"
-        Svg={TechCog}
+        Svg={Ship}
         buttons={{
           left: { label: "Products", to: "#code_genesis_products" },
           right: { label: "Learn More", to: "#code_genesis_description" },

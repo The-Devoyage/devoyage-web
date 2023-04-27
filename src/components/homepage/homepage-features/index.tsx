@@ -1,15 +1,12 @@
 import React, { FC, ReactNode } from "react";
 import styles from "./styles.module.css";
 import Link from "@docusaurus/Link";
-import { default as TechCog } from "@site/static/img/tech-cog.svg";
-import { default as Wrenches } from "@site/static/img/wrenches.svg";
-import { default as Keys } from "@site/static/img/keys.svg";
 import { Description } from "../../common/description";
 import { BadgeLink } from "../badges";
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<"svg">>;
+  src: string;
   description: JSX.Element;
   button: {
     label: string;
@@ -26,13 +23,17 @@ type FeatureItem = {
 const featureList: FeatureItem[] = [
   {
     title: "Productivity",
-    Svg: TechCog,
+    src:
+      "https://res.cloudinary.com/the-devoyage/image/upload/v1682534171/tech-cog_l4lmmk.png",
     button: { label: "Browse Products", to: "/products" },
     description: (
       <p>
         Add Code Genesis Products
-        <span style={{ color: "#5ecf58" }}> Applications and Libraries</span> to
-        almost any stack to kick start development.
+        <span style={{ color: "var(--ifm-color-success)" }}>
+          {" "}
+          Applications and Libraries
+        </span>{" "}
+        to almost any stack to kick start development.
       </p>
     ),
     links: [
@@ -73,13 +74,14 @@ const featureList: FeatureItem[] = [
   },
   {
     title: "Support",
-    Svg: Wrenches,
+    src:
+      "https://res.cloudinary.com/the-devoyage/image/upload/v1682533859/wrenches_yxrlke.png",
     button: { label: "Development Services", to: "/services" },
     description: (
       <p>
         Tools built so that developers can jump in to easily provide their own
         modifications{" "}
-        <span style={{ color: "#5ecf58" }}>
+        <span style={{ color: "var(--ifm-color-success)" }}>
           with help from The Devoyage Team.
         </span>
       </p>
@@ -87,19 +89,20 @@ const featureList: FeatureItem[] = [
   },
   {
     title: "Open Source",
-    Svg: Keys,
+    src:
+      "https://res.cloudinary.com/the-devoyage/image/upload/v1682534211/keys_uxhpyc.png",
     button: { label: "Github", to: "https://www.github.com/the-devoyage" },
     description: (
       <p>
         Keep the code and modify it to fit your needs.{" "}
-        <span style={{ color: "#5ecf58" }}>Open Source</span> products make it
-        easy to share success with others.
+        <span style={{ color: "var(--ifm-color-success)" }}>Open Source</span>{" "}
+        products make it easy to share success with others.
       </p>
     ),
   },
 ];
 
-function Feature({ title, Svg, description, button, links }: FeatureItem) {
+function Feature({ title, src, description, button, links }: FeatureItem) {
   return (
     <div className="row margin-vert--xl padding--md">
       <div
@@ -109,7 +112,7 @@ function Feature({ title, Svg, description, button, links }: FeatureItem) {
           alignItems: "flex-start",
         }}
       >
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={src} />
       </div>
       <div className="col col--11">
         <div
