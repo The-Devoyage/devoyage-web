@@ -1,5 +1,4 @@
 import React, { FC, ReactNode } from "react";
-import styles from "./styles.module.css";
 import Link from "@docusaurus/Link";
 import { Description } from "../../common/description";
 import { BadgeLink } from "../badges";

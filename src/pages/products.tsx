@@ -5,113 +5,86 @@ import { ProductCard } from "../components/products/product-card";
 import { Description } from "../components/common/description";
 import { default as Ship } from "@site/static/img/logo.svg";
 
-interface ProductInfo {
+export interface ProductInfo {
   title: string;
   description: string;
   image: string;
-  links?: { label: string; to?: string }[];
-  tags?: string[];
+  link?: string;
+  badge?: string;
+  examples: { label: string; to: string }[];
 }
 
 const products: ProductInfo[] = [
   {
-    title: "Orion's Arrow",
+    title: "Subgraph",
     description:
-      "A SDK to Easily Connect React Applications to the Code Genesis APIs.",
+      "Dynamically generate a functional API from a simple configuration/schema.",
     image:
-      "https://res.cloudinary.com/the-devoyage/image/upload/c_pad,h_300,w_600/v1667677652/The-Devoyage/Orion_s_Arrow_vxpcsl.png",
-    links: [
+      "https://res.cloudinary.com/the-devoyage/image/upload/c_pad,h_300,w_600/v1681523977/Subgraph_Logo_2_gff26m.png",
+    link: "https://github.com/the-devoyage/subgraph",
+    badge: "v0.0.7",
+    examples: [
       {
-        label: "GitHub",
-        to: "https://github.com/The-Devoyage/orions-arrow",
+        label: "Configurations",
+        to: "https://github.com/The-Devoyage/subgraph/tree/master/examples",
       },
-      { label: "Docs", to: "/orions-arrow/intro" },
     ],
-    tags: ["SDK", "React"],
   },
   {
-    title: "Admin Starter",
+    title: "Request Filter Language",
     description:
-      "Using any of the code genesis products? The Admin starter instantly connects and allows you to manage Accounts, Users, Media, and more.",
+      "A library to help standardize the shape of network requests for both API and Client Side development.",
     image:
-      "https://res.cloudinary.com/the-devoyage/image/upload/c_pad,h_300,w_600/v1682534645/Admin_Starter_krw4hx.png",
-    links: [{ label: "Coming Soon" }],
-    tags: ["Manage Data", "Website Statistics"],
-  },
-  {
-    title: "GraphQL Gateway",
-    description:
-      "A gateway that is ready for your application as it grows including features such as authorization, graphql file routing, and pre-built global context.",
-    image:
-      "https://res.cloudinary.com/the-devoyage/image/upload/c_fill,h_300,w_600/v1653516541/The-Devoyage/graphql-gateway_lp04zs.jpg",
-    links: [
+      "https://res.cloudinary.com/the-devoyage/image/upload/c_pad,h_300,w_600/v1675627604/The-Devoyage/RFL_Logo_1_sb6mmm.png",
+    link: "https://github.com/The-Devoyage/request-filter-language",
+    badge: "v0.0.5",
+    examples: [
       {
-        label: "GitHub",
-        to: "https://github.com/The-Devoyage/graphql-gateway",
+        label: "React Admin Starter",
+        to: "https://github.com/The-Devoyage/admin-starter",
       },
-      { label: "Docs", to: "/gateway/intro" },
+      {
+        label: "Orions Arrow SDK",
+        to: "https://github.com/the-devoyage/orions-arrow",
+      },
     ],
-    tags: ["Security", "Request Routing", "Secure Proxies"],
   },
   {
-    title: "GraphQL Accounts",
+    title: "Sequelize Query Generator",
     description:
-      "Authorize access to your application with this federated micro-service.",
+      "Instantly add advanced filtering, pagination, and statistical querying to restful or GraphQL APIs.",
     image:
-      "https://res.cloudinary.com/the-devoyage/image/upload/c_fill,h_300,w_600/v1653515760/The-Devoyage/graphql-accounts_jlkmfo.jpg",
-    links: [
+      "https://res.cloudinary.com/the-devoyage/image/upload/c_pad,h_300,w_600/v1675628792/The-Devoyage/SQG_Logo_yqxhr1.png",
+    link: "https://github.com/the-devoyage/sequelize-query-generator",
+    badge: "v0.0.5",
+    examples: [],
+  },
+  {
+    title: "Mongo Filter Generator",
+    description:
+      "Easily add Find, filter, paginating functionality to API routes/resolvers with just a few lines of code.",
+    image:
+      "https://res.cloudinary.com/the-devoyage/image/upload/c_pad,h_300,w_600/v1675628120/The-Devoyage/MFG_Logo_ltsjuc.png",
+    link: "https://github.com/the-devoyage/mongo-filter-generator",
+    badge: "v0.5.1",
+    examples: [
       {
-        label: "GitHub",
+        label: "GraphQL Users API",
+        to: "https://github.com/the-devoyage/graphql-users",
+      },
+      {
+        label: "GraphQL Accounts API",
         to: "https://www.github.com/the-devoyage/graphql-accounts",
       },
-      { label: "Docs", to: "/accounts/intro" },
-    ],
-    tags: ["Authenticate", "Secure", "Identify"],
-  },
-  {
-    title: "GraphQL Users",
-    description: "Save and manage user data and enable account memberships.",
-
-    image:
-      "https://res.cloudinary.com/the-devoyage/image/upload/c_fill,h_300,w_600/v1653515746/The-Devoyage/graphql-users_xqmtxr.jpg",
-    links: [
       {
-        label: "GitHub",
-        to: "https://www.github.com/the-devoyage/graphql-users",
-      },
-      { label: "Docs", to: "/users/intro" },
-    ],
-    tags: ["User Data", "Memberships", "Profiles", "Identity"],
-  },
-  {
-    title: "GraphQL Media",
-    description:
-      "Upload and serve files and images with this federated micro-service.",
-    image:
-      "https://res.cloudinary.com/the-devoyage/image/upload/c_pad,h_300,w_600/v1653515788/The-Devoyage/graphql-media_jwuhfx.png",
-    links: [
-      {
-        label: "GitHub",
+        label: "GraphQL Media API",
         to: "https://www.github.com/the-devoyage/graphql-media",
       },
-      { label: "Docs (soon!)" },
-    ],
-    tags: ["File Uploads", "Images", "PDFs"],
-  },
-  {
-    title: "GraphQL Mailer",
-    description:
-      "An automated mailing server that listens for triggers in order to send your users custom HTML content.",
-    image:
-      "https://res.cloudinary.com/the-devoyage/image/upload/c_pad,h_300,w_600/v1682534730/Mailer_1_yzngrl.png",
-    links: [
       {
-        label: "GitHub",
+        label: "GraphQL Mailer API",
         to: "https://www.github.com/the-devoyage/graphql-mailer",
       },
-      { label: "Docs (soon!)" },
     ],
-    tags: ["Automated Emails", "Custom Templates"],
   },
 ];
 
@@ -130,7 +103,7 @@ const Products = () => {
       />
       <main className="container" style={{ position: "relative" }}>
         <div
-          className="margin-top--md background--overlay blur"
+          className="margin-top--md"
           style={{ scrollMarginTop: "calc(60px + 1rem)" }}
           id="code_genesis_description"
         >
@@ -159,13 +132,7 @@ const Products = () => {
               style={{ scrollMarginTop: "calc(60px + 1rem)" }}
               id="code_genesis_products"
             >
-              <ProductCard
-                title={p.title}
-                description={p.description}
-                image={p.image}
-                buttons={p.links?.map((linkInfo) => linkInfo)}
-                badges={p.tags}
-              />
+              <ProductCard {...p} />
             </div>
           ))}
         </section>

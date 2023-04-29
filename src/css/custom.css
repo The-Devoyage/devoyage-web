@@ -1,6 +1,5 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
+ * Any CSS included here will be global. The classic template bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
 
@@ -75,6 +74,7 @@ h4 {
 
   /* Links */
   --ifm-link-hover-decoration: none;
+  --ifm-menu-color: var(--ifm-link-color);
 
   /* Cards */
   --ifm-card-border-radius: 0.25rem;
@@ -113,7 +113,6 @@ html[data-theme="dark"] {
   --ifm-color-content-secondary: rgba(255, 255, 255, 1);
   --ifm-breadcrumb-separator-filter: invert(64%) sepia(11%) saturate(0%)
     hue-rotate(149deg) brightness(99%) contrast(95%);
-  --ifm-code-background: rgba(255, 255, 255, 0.1);
   --ifm-scrollbar-track-background-color: #444444;
   --ifm-scrollbar-thumb-background-color: #686868;
   --ifm-scrollbar-thumb-hover-background-color: #7a7a7a;
@@ -134,7 +133,7 @@ html[data-theme="dark"] {
   --ifm-footer-background-color: #172e46;
   --ifm-footer-link-color: white;
   --ifm-button-color: var(--ifm-color-dark-blue);
-  --ifm-dropdown-background-color: #172e46;
+  --ifm-dropdown-background-color: #264769;
   --ifm-heading-color: white;
 }
 
@@ -180,6 +179,13 @@ html[data-theme="dark"] {
   }
 }
 
+.card {
+  overflow: unset;
+}
+.dropdown__link {
+  cursor: pointer;
+}
+
 .badge--secondary {
   color: var(--ifm-color-blue-900);
 }
@@ -211,10 +217,4 @@ li:nth-last-of-type(1) {
   color: black;
   background-color: var(--ifm-color-secondary-darker);
   border-color: var(--ifm-color-secondary-darker);
-}
-
-@media screen and (max-width: 415px) {
-  .navbar--dark {
-    --ifm-navbar-background-color: unset;
-  }
 }

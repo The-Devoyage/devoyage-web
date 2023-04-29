@@ -1,20 +1,14 @@
 import React, { FC } from "react";
 import Link from "@docusaurus/Link";
+import { ProductInfo } from "@site/src/pages/products";
 
-interface ProductCardProps {
-  title: string;
-  description: string;
-  image: any;
-  buttons?: { label: string; to?: string }[];
-  badges?: string[];
-}
-
-export const ProductCard: FC<ProductCardProps> = ({
+export const ProductCard: FC<ProductInfo> = ({
   title,
   description,
   image,
-  buttons,
-  badges,
+  link,
+  badge,
+  examples,
 }) => {
   return (
     <div
@@ -28,34 +22,49 @@ export const ProductCard: FC<ProductCardProps> = ({
       }}
     >
       <div className="card__image">
-        <img src={image} />
+        <span
+          className="badge badge--secondary margin--md"
+          style={{ position: "absolute", right: 0 }}
+        >
+          {badge}
+        </span>
+        <Link to={link}>
+          <img
+            src={image}
+            className="margin-top--md"
+            style={{ width: "25%" }}
+          />
+        </Link>
       </div>
-      <div className="card__body">
+      <div className="card__body margin--sm">
         <div>
-          <h4>{title}</h4>
+          <h3>{title}</h3>
           <small>{description}</small>
         </div>
-        <div className="margin-top--sm">
-          {badges?.map((b) => (
-            <span key={b} className="badge badge--secondary margin-right--sm">
-              {b}
-            </span>
-          ))}
-        </div>
       </div>
-      <div className="row card__footer">
-        {buttons?.map((b) => (
-          <div key={b.label} className={`col col--${12 / buttons.length}`}>
-            <Link to={b.to}>
-              <button
-                disabled={!b.to}
-                className="button button--secondary button--outline button--md button--block margin-top--md"
-              >
-                {b.label}
-              </button>
-            </Link>
+      <div className="row row--no-gutters card__footer margin--sm">
+        <Link to={link} className="col col--6">
+          Learn More
+        </Link>
+        {examples.length ? (
+          <div
+            className="dropdown dropdown--hoverable col col--6"
+            style={{ position: "relative" }}
+          >
+            <button className="button button--secondary button--sm button--outline button--block">
+              Examples
+            </button>
+            <ul className="dropdown__menu">
+              {examples.map((e) => (
+                <li key={e.label}>
+                  <Link to={e.to} className="dropdown__link">
+                    {e.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
-        ))}
+        ) : null}
       </div>
     </div>
   );
