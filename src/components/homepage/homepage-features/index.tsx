@@ -111,7 +111,7 @@ function Feature({ title, src, description, button, links }: FeatureItem) {
           alignItems: "flex-start",
         }}
       >
-        <img src={src} />
+        <img src={src} width={75} />
       </div>
       <div className="col col--11">
         <div
