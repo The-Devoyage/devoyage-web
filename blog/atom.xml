@@ -12,7 +12,7 @@
         <id>subgraph-v0.0.8-instant-sql-api</id>
         <link href="https://www.thedevoyage.com/blog/subgraph-v0.0.8-instant-sql-api"/>
         <updated>2023-05-01T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Hello All, Thanks for Joining!]]></summary>
+        <summary type="html"><![CDATA[Create a nearly instant API for your SQL Database with Subgraph v0.0.8.]]></summary>
         <content type="html"><![CDATA[<p>Hello All, Thanks for Joining!</p><p>Today we are creating instant APIs around SQL Databases of various dialects with Subgraph, a proof
 of concept tool that is made to assist speedy API development.</p><p>All it takes to use subgraph is a config file that informs the service where your data is and what your data looks like. Define the
 config and start the API to create an instant API around your database.</p><p>With the latest release, v0.0.8, we are taking a look at the newly added support for a few dialects of SQL. In addition to
