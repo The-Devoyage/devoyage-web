@@ -1,12 +1,12 @@
 ---
 title: Subgraph v0.0.8 - Instant SQL API with Subgraph
-slug: subgraph-v0.0.7-instant-sql-api
+slug: subgraph-v0.0.8-instant-sql-api
 authors: [nick]
 tags: [subgraph]
 date: 2023-05-01
 ---
 
-Hello all, thanks for joining!
+Hello All, Thanks for Joining!
 
 Today we are creating instant APIs around SQL Databases of various dialects with Subgraph, a proof 
 of concept tool that is made to assist speedy API development.
@@ -20,15 +20,17 @@ API from scratch!
 
 ![Subgraph SQL](https://res.cloudinary.com/the-devoyage/image/upload/v1683081810/Subgraph_SQL_kteswo.png)
 
+Check out the [repo](https://www.github.com/the-devoyage/subgrpah)!
+
 <!--truncate-->
 
-## Build a quick API for your SQL Database
+## Build a Quick API for your SQL Database
 
 The goal with subgraph is pretty simple - Shorten the time it takes to plan, develop, and deploy an API. With subgraph, 
 we do not need to write routes, controllers, or resolvers from scratch. We do not need to deal with boiler plate, database
 connections, or even validation.
 
-All we need to do is tell the Subgraph service where or data is and what it looks like. Subgraph takes care of the rest by
+All we need to do is tell the Subgraph service where our data is and what it looks like. Subgraph takes care of the rest by
 connecting to the database and creating the routes/resolvers. With this, you now can spend your time on the parts of 
 your business that might make a larger impact for your clients and sales.
 
@@ -40,7 +42,7 @@ You own the database. You get to choose what type of database is best suited for
 Subgraph supports Mongo, Postgres, MySQL, and SqLite databases, making it easy for you to connect to your data.
 
 In this example we will create a SqLite DB and use Subgraph to generate an API around a few tables. Keep in mind, that connecting Subgrpah
-to MySQL, Postgres, or even Mongo, is a very similar process! 
+to MySQL, Postgres, or even Mongo, is a very similar process.
 
 First, make sure you have SqLite installed on your system. The following guide is going to assume you are on a Linux machine.
 
@@ -126,7 +128,7 @@ scalar = "Boolean"
 required = true
 ```
 
-That's it! Let's do the same for the coffee table and take a look at the finished config!
+That's it! Let's do the same for the coffee table and take a look at the finished config.
 
 ```toml
 # The Finished Configuration:
@@ -204,7 +206,7 @@ And that's it! Your new API is now running at the port specified. We can load up
 
 ### 4. Query the API
 
-Load the playground at the specified port. The playground will let you construct and execute queries againsts your new API.
+Load the playground at the specified port. The playground will let you construct and execute queries against your new API.
 
 ```
 # Navigate In Browser:
@@ -239,7 +241,7 @@ Find One, Find Many, Update One, Update Many, and Create One resolvers. Delete o
 
 Thanks for checking in on the progress. There is a lot of work to do in order to get to v1, a production ready environment!
 
-If you are a rusteacean and want to jump in, please feel free to check out the [source code](https://www.github.com/the-devoyage/subgraph),
+If you are a curios rusteacean and want to jump in, please feel free to check out the [source code](https://www.github.com/the-devoyage/subgraph),
 and share your ideas about the future of the project.
 
 Upcoming projects include Delete Operations, Authorization Support, Testing Integrations, Federation 2 Support, and Error Handling! Thanks
