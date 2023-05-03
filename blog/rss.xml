@@ -4,15 +4,15 @@
         <title>The Devoyage Blog</title>
         <link>https://www.thedevoyage.com/blog</link>
         <description>The Devoyage Blog</description>
-        <lastBuildDate>Mon, 01 May 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 02 May 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
             <title><![CDATA[Subgraph v0.0.8 - Instant SQL API with Subgraph]]></title>
-            <link>https://www.thedevoyage.com/blog/subgraph-v0.0.7-instant-sql-api</link>
-            <guid>subgraph-v0.0.7-instant-sql-api</guid>
-            <pubDate>Mon, 01 May 2023 00:00:00 GMT</pubDate>
+            <link>https://www.thedevoyage.com/blog/subgraph-v0.0.8-instant-sql-api</link>
+            <guid>subgraph-v0.0.8-instant-sql-api</guid>
+            <pubDate>Tue, 02 May 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Hello all, thanks for joining!]]></description>
             <content:encoded><![CDATA[<p>Hello all, thanks for joining!</p><p>Today we are creating instant APIs around SQL Databases of various dialects with Subgraph, a proof
 of concept tool that is made to assist speedy API development.</p><p>All it takes to use subgraph is a config file that informs the service where your data is and what your data looks like. Define the
