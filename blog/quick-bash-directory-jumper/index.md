@@ -5,7 +5,6 @@ authors: [nick]
 tags: [bash, directory jumper, cd, change directory]
 date: 2023-05-12
 description: Avoid typing the path when changing directories in the terminal. These directory jumpers can help you quickly and easily change directories and are just fun to customize.
-# image: https://res.cloudinary.com/the-devoyage/image/upload/v1683081810/Subgraph_SQL_kteswo.png
 keywords:
   [bash, directory jumper, bash alias, cd command, change directory linux]
 ---
@@ -16,7 +15,9 @@ Hello All, Thanks for Joining!
 
 Today, I'd love to share a quick little bash script that helps you change directories quickly and easily. We will be trying our hardest to "Avoid The Path", meaning we won't be typing out lengthy paths when changing directories.
 
-As developers, we are constantly jumping into and out of directories, spinning up environments in different locations, or even to grabbing a quick reference from another project. Doing such tasks from the command line usually provides power that a GUI just might not have, making it worth the effort to stay in the terminal. So, let's take a look at some fancy ways to "avoid the path"!
+As developers, we are constantly jumping into and out of directories, spinning up environments in different locations, or even to grabbing a quick reference from another project. Doing such tasks from the command line usually provides power that a GUI just might not have, making it worth the effort to stay in the terminal.
+
+So, let's take a look at some fancy ways to "avoid the path"!
 
 ~![Avoid The Path](https://res.cloudinary.com/the-devoyage/image/upload/v1684007203/cd_DesktopDevelopmentOrganizationProject_1_ao2lhc.png)
 
@@ -28,15 +29,17 @@ As developers, we are constantly jumping into and out of directories, spinning u
 
 For the longest of time I was happy with the simplest solution, a quick bash alias. The number of projects on my computer were few in numbers, so this solution made a ton of sense.
 
-Setting an alias is quick and easy. Simply add the alias to your bash profile. This file might differ depending on your shell and configuration. That being said, some of the most common names for these settings files are `.bashrc`, `.bash_profile`, or even `.bash_aliases`.
+Setting an alias is quick and easy. Simply add the alias to your bash profile, which is a file in the home directory of your computer. This file name might differ depending on your shell and configuration. That being said, some of the most common names for these settings files are `.bashrc`, `.bash_profile`, or even `.bash_aliases`.
 
 ```
 # .bashrc
-# Typing "DEV" into the command line will now change directories to a specified path.
+# Typing "DEV" into the command line will now change directories
+# to a specified path.
+
 alias DEV=`cd ~/Desktop/DEV`
 ```
 
-You'll need to source the file that was changed. You can do this by restarting the terminal or simply running `source .bashrc`, inserting the appropriate file name. Once sourced, your new alias will be ready to use.
+You'll need to source the file that was changed, which will tell the shell that something new is available. You can do this by restarting the terminal or simply running `source .bashrc`, inserting the appropriate file name. Once sourced, your new alias will be ready to use.
 
 ```
 nickisyourfan@system76:~$ DEV
@@ -53,7 +56,7 @@ As time passes, you'll accumulate numerous projects in your development director
 
 We can convert our alias into a function that is callalble from the command line. It's extreemly easy and can even take in an arguments!
 
-Our function below will be called just like the bash alias above, simply type the given name, in our case `DEV`. This time it's going to take an optional second word/argument, the name of the folder of where you are changing to. For example, `DEV my-project123`.
+Our function below will be called just like the bash alias above, simply type the given name, in our case `DEV`. This time it's going to take an optional second word/argument, which is the name of the folder of where you are changing to. For example, `DEV my-project`.
 
 ```bash
 # .bashrc
@@ -71,11 +74,11 @@ function DEV() {
 
 Now we can jump into any project from any location by typing two words.
 
-Source the file, then use the command and let's try it out..
+Source the file, then use the command and let's try it out.
 
 ```
-nickisyourfan@system76:~$ DEV my-project123
-nickisyourfan@system76:~/Desktop/DEV/my-project123$
+nickisyourfan@system76:~$ DEV my-project
+nickisyourfan@system76:~/Desktop/DEV/my-project$
 ```
 
 Avoid the Path -- Win!
@@ -86,7 +89,7 @@ I know what you are thinking... We can do better!
 
 I hope you are not in the middle of something important, because here is where procrastination becomes really hard to resist.
 
-Our current script makes it easy to jump into our development directory and even somewhat into nested directories one level deep. If you are like me, some projects get organized into the organization folders, meaning that my projects directory is now several levels deep. The previous script just is not cut out to handle my directories structured like this.
+Our current script makes it easy to jump into our development directory and even somewhat into nested directories one level deep. If you are like me, some projects get organized into the nested folders, meaning that my projects directory is now several levels deep. The previous script just is not cut out to handle my directories structured like this.
 
 Let's use some common functions to support finding of nested directories. This time, we take a more dynamic approach.
 
@@ -146,10 +149,12 @@ Avoid the Path - Win!
 
 To top off the script we are going to add an additional function that enable some super sweet auto complete.
 
-Immagine... the name of the project you want to cd into is on the tip of your tongue but you just can't remember it's name. Instead of using the old trusty `ls` command and reading the dozens of incomplete projects, we can enable some tab completion to help us remember the name of the project/directory we are looking for.
+Imagine... the name of the project you want to cd into is on the tip of your tongue but you just can't remember it's name. Instead of using the old trusty `ls` command and reading the dozens of incomplete projects, we can enable some tab completion to help us remember the name of the project/directory we are looking for.
+
+Start by typing in the command, then press tab to get some suggestions.
 
 ```
-nickisyourfan@system76:~/Desktop/DEV/@the-devoyage/subgraph$ DEV my-proj # Press `Tab` to get suggestions.
+nickisyourfan@system76:~/Desktop/DEV/@the-devoyage/subgraph$ DEV my-proj
 my-project                         my-project-1                    my-project-2
 ```
 
