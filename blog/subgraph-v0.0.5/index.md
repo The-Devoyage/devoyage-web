@@ -6,6 +6,8 @@ tags: [subgraph]
 date: 2023-02-26
 ---
 
+import {BlogFooter} from '@site/src/components/common/blog-footer'
+
 Hello all, and thanks for joining.
 
 Today, we start a conversation about what an API does at a basic level while talking about the newest release of project `Subgraph`, a GraphQL API Generator built with Rust.
@@ -15,21 +17,22 @@ Your next startup idea will most likely resolve around tech; It's 2023! So befor
 ![API Vs Car](https://res.cloudinary.com/the-devoyage/image/upload/v1677423235/The-Devoyage/API_VS_CAR_keho8m.png)
 
 <!--truncate-->
+
 ## API vs Car, yes a Car
 
 As you may already know, data is your most valuable asset.
 
 I am not saying it would be fun, but a company can recover from a broken application. Loss of code, bugs, and crashes can (and will) happen. But nothing is worse than if you loose the data itself.
 
-Realizing this, we can compare an API to a Car. Yes, that shiny mode of transportation that gets you everywhere. The core job of an API is to move data. 
+Realizing this, we can compare an API to a Car. Yes, that shiny mode of transportation that gets you everywhere. The core job of an API is to move data.
 
-Not unlike a car, as long as data can safely get from point A to point B, the API has done it's job. Meaning, that for most cases, any car will do. 
+Not unlike a car, as long as data can safely get from point A to point B, the API has done it's job. Meaning, that for most cases, any car will do.
 
 ### The Jobs of an API
 
 In most situations, your car is not that different from my car. In fact, they are almost identical aside from some minor bells and whistles.
 
-At a high overview, the job of an API is pretty basic, move data! There are four basic reasons for data transportation and they boil down to the acronym, "CRUD". 
+At a high overview, the job of an API is pretty basic, move data! There are four basic reasons for data transportation and they boil down to the acronym, "CRUD".
 
 "CRUD" stands for Create -- Read -- Update -- Delete. The basic responsibilities of an API.
 
@@ -65,7 +68,7 @@ The job of an API is to transfer data. A shiny new car is nice, but a clunker ca
 
 Many times, we sit down with our development team to build this vehicle (API) part by part, piece by piece, from the ground up. Only to realize we are building the same thing over and over, solving the same issues the same way again and again.
 
-Since these basic tasks of an API are mainly universal, an API Generator such as Project `Subgraph` might be a solution that helps you to build your next API. 
+Since these basic tasks of an API are mainly universal, an API Generator such as Project `Subgraph` might be a solution that helps you to build your next API.
 
 Currently, the project is a proof of concept. Define a simple configuration to run the API. Instant data transportation in a classy, speedy, and modern vehicle.
 
@@ -73,7 +76,7 @@ Currently, the project is a proof of concept. Define a simple configuration to r
 
 The goal is simple -- Since APIs are generally similar, we should be able to generate an API based on the data we currently have or want to have in our database.
 
-We define a simple configuration, and the generator handles the creation of the four main responsibilities of an API - Create, Read, Update, Delete. 
+We define a simple configuration, and the generator handles the creation of the four main responsibilities of an API - Create, Read, Update, Delete.
 
 Let's take a look at the ~20 lines of code needed to start your next API.
 
@@ -105,10 +108,10 @@ required = true
 [[service.entities.fields]]
 name = "rating"
 scalar = "Int"
-required = true 
+required = true
 ```
 
-2. Starting the API 
+2. Starting the API
 
 Spinning this bad boy up is a One Line Command for your Developers.
 
@@ -122,7 +125,7 @@ Thanks for checking out this crazy simple description of an API and the Subgraph
 
 Version `v0.0.5` is officially released and while it is still a proof of concept, it provides some new features that take us one step closer to an official release.
 
-In this new version, we are able to define configuration to block or allow access by domain! In tech terms, we can define some simple CORS Configuration. 
+In this new version, we are able to define configuration to block or allow access by domain! In tech terms, we can define some simple CORS Configuration.
 
 - Specify Allowed HTTP Methods
 - Declare Allowed Origins
@@ -132,6 +135,8 @@ Aside from these tech terms, it allows you to lock your server down from a secur
 
 ---
 
-If you are interested in [Checking Out The Code](https://www.github.com/the-devoyage/subgraph), it's open source! Download it to try it, view it, or submit your contributions as the project grows. 
+If you are interested in [Checking Out The Code](https://www.github.com/the-devoyage/subgraph), it's open source! Download it to try it, view it, or submit your contributions as the project grows.
 
 Thanks All!
+
+<BlogFooter />

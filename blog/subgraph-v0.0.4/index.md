@@ -1,27 +1,30 @@
 ---
 slug: subgraph-v0.0.4-versatile-typings
-title: Subgraph v0.0.4 - Versatile Typings for a GraphQL API Generator 
+title: Subgraph v0.0.4 - Versatile Typings for a GraphQL API Generator
 authors: [nick]
 tags: [subgraph]
 date: 2023-02-20
 ---
 
+import {BlogFooter} from '@site/src/components/common/blog-footer'
+
 Hello all! Thanks for joining!
 
-Today, the goal is to share the idea of versatile typings for an API Generator. 
+Today, the goal is to share the idea of versatile typings for an API Generator.
 
 In version `v0.0.4` of the `subgraph` API Generator Project, I am happy to introduce the (mongo) Object Id Scalar. This means it's now possible to instantly start an API `Subgraph` Instance with the capabilities to find Mongo Documents by their Object ID! One simple step forward for this POC GraphQL API Generator written in Rust.
 
-In case you are new to `Project Subgraph`, "Define to Run", is the motto. Define a simple configuration, and start the API. The code does the rest by generating resolvers and database connections -- An instantly generated API.  
+In case you are new to `Project Subgraph`, "Define to Run", is the motto. Define a simple configuration, and start the API. The code does the rest by generating resolvers and database connections -- An instantly generated API.
 
 ![GraphQL Versatile Typings](https://res.cloudinary.com/the-devoyage/image/upload/v1676924961/The-Devoyage/INTUITIVE_SCALARS_4_ttaqvh.png)
 
 So, what kind of scalars are we including in this API Generator? Let's take a look.
 
 <!--truncate-->
+
 ## Versatile Typings
 
-Creating an API Generator needs to be versatile, yet simple. Two steps simple. 
+Creating an API Generator needs to be versatile, yet simple. Two steps simple.
 
 1. Define the entities.
 2. Let the code do it's job to create the API.
@@ -85,13 +88,13 @@ required = false
 [[service.entities.fields]]
 name = "inStock"
 scalar = "Boolean"
-required = true  
+required = true
 
 [[service.entities]]
 ...
 ```
 
-In about 50 lines of code, this little API can be started! Compare that to the hundreds or thousands of lines that might be written for a completely custom API that does nearly the exact same thing. 
+In about 50 lines of code, this little API can be started! Compare that to the hundreds or thousands of lines that might be written for a completely custom API that does nearly the exact same thing.
 
 Now that these couple lines have been written into a configuration file, the API can be spun up and queried.
 
@@ -110,3 +113,5 @@ And like that... a brand new Beer API has been born! Checkout the sandbox hosted
 Thanks for checking out the [Repo](https://www.github.com/the-devoyage/subgraph), and following along with this proof of concept. If you are interested in contributing or have some ideas, feel free to share on the `issues` tab.
 
 Version `v0.0.5` is on it's way, with configurable CORS settings. If you like the project or want to keep up to date, follow along to get notifications of future releases.
+
+<BlogFooter />

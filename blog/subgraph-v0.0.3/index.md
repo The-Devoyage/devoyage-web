@@ -6,24 +6,27 @@ tags: [subgraph]
 date: 2023-02-04
 ---
 
+import {BlogFooter} from '@site/src/components/common/blog-footer'
+
 Hello all! Thanks for joining.
 
-Today I'd like to share a quick update for `@the-devoyage/subgraph`, a GraphQL API Generator with the goal of simplicity. 
+Today I'd like to share a quick update for `@the-devoyage/subgraph`, a GraphQL API Generator with the goal of simplicity.
 
 Define to run is the motto so far, which references the ease of running this API Generator. Define the schema to run the API. It should be that easy to start an API up.
 
-In version `v0.0.3` we are adding the ability to Find Many which is one of the reusable resolvers that is created for you when you start the service. 
+In version `v0.0.3` we are adding the ability to Find Many which is one of the reusable resolvers that is created for you when you start the service.
 
 ![GraphQL Resolvers CRUD](https://res.cloudinary.com/the-devoyage/image/upload/v1675543551/The-Devoyage/CRUD_GraphQL_aaooqr.png)
 
 <!--truncate-->
+
 ## Reusable Resolvers
 
-The idea of an API Generator is to make creating a standardized API easy. Many parts of creating an API can be automated, including the creation of resolvers. 
+The idea of an API Generator is to make creating a standardized API easy. Many parts of creating an API can be automated, including the creation of resolvers.
 
 The core of an API revolves around CRUD operations (Create, Read, Update, Delete) which can easily be automated considering there are really not many variations to consider.
 
-The Devoyage's `subgraph` project (The API Generator) has the goal of automating a variety of these operations for each defined entity. 
+The Devoyage's `subgraph` project (The API Generator) has the goal of automating a variety of these operations for each defined entity.
 
 - Find One/Many
 - Create One/Many
@@ -93,4 +96,4 @@ type Query {
 
 It's a small step toward the goal and I am glad you are here to follow along. If you're interested in checking out the code or trying out this proof of concept, check out the [Subgraph Project](https://www.github.com/the-devoyage/subgraph) on GitHub!
 
-
+<BlogFooter />

@@ -9,9 +9,11 @@ image: https://res.cloudinary.com/the-devoyage/image/upload/v1683081810/Subgraph
 keywords: [graphql, subgraph, api, api generator]
 ---
 
+import {BlogFooter} from '@site/src/components/common/blog-footer'
+
 Hello All, Thanks for Joining!
 
-Today we are creating instant APIs around SQL Databases of various dialects with Subgraph, a proof 
+Today we are creating instant APIs around SQL Databases of various dialects with Subgraph, a proof
 of concept tool that is made to assist speedy API development.
 
 All it takes to use subgraph is a config file that informs the service where your data is and what your data looks like. Define the
@@ -29,19 +31,19 @@ Check out the [repo](https://www.github.com/the-devoyage/subgrpah)!
 
 ## Build a Quick API for your SQL Database
 
-The goal with subgraph is pretty simple - Shorten the time it takes to plan, develop, and deploy an API. With subgraph, 
+The goal with subgraph is pretty simple - Shorten the time it takes to plan, develop, and deploy an API. With subgraph,
 we do not need to write routes, controllers, or resolvers from scratch. We do not need to deal with boiler plate, database
 connections, or even validation.
 
 All we need to do is tell the Subgraph service where our data is and what it looks like. Subgraph takes care of the rest by
-connecting to the database and creating the routes/resolvers. With this, you now can spend your time on the parts of 
+connecting to the database and creating the routes/resolvers. With this, you now can spend your time on the parts of
 your business that might make a larger impact for your clients and sales.
 
 Let's see an example!
 
 ### 1. Create the Database
 
-You own the database. You get to choose what type of database is best suited for your project. As mentioned above, 
+You own the database. You get to choose what type of database is best suited for your project. As mentioned above,
 Subgraph supports Mongo, Postgres, MySQL, and SqLite databases, making it easy for you to connect to your data.
 
 In this example we will create a SqLite DB and use Subgraph to generate an API around a few tables. Keep in mind, that connecting Subgraph
@@ -150,7 +152,7 @@ name = "Coffee"
 name = "id"
 scalar= "Int"
 required = true
-exclude_from_input = ["CreateOne", "UpdateOne", "UpdateMany"] 
+exclude_from_input = ["CreateOne", "UpdateOne", "UpdateMany"]
 [[service.entities.fields]]
 name = "name"
 scalar = "String"
@@ -170,7 +172,7 @@ name = "Espresso"
 name = "id"
 scalar = "Int"
 required = true
-exclude_from_input = ["CreateOne", "UpdateOne", "UpdateMany"] 
+exclude_from_input = ["CreateOne", "UpdateOne", "UpdateMany"]
 [[service.entities.fields]]
 name = "name"
 scalar = "String"
@@ -248,4 +250,6 @@ If you are a curios rusteacean and want to jump in, please feel free to check ou
 and share your ideas about the future of the project.
 
 Upcoming projects include Delete Operations, Authorization Support, Testing Integrations, Federation 2 Support, and Error Handling! Thanks
-for keeping tuned and following along. 
+for keeping tuned and following along.
+
+<BlogFooter />
