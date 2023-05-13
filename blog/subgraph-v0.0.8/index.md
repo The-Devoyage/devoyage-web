@@ -4,6 +4,9 @@ slug: subgraph-v0.0.8-instant-sql-api
 authors: [nick]
 tags: [subgraph]
 date: 2023-05-01
+description: Create a nearly instant API for your SQL Database with Subgraph v0.0.8.
+image: https://res.cloudinary.com/the-devoyage/image/upload/v1683081810/Subgraph_SQL_kteswo.png
+keywords: [graphql, subgraph, api, api generator]
 ---
 
 Hello All, Thanks for Joining!
@@ -41,7 +44,7 @@ Let's see an example!
 You own the database. You get to choose what type of database is best suited for your project. As mentioned above, 
 Subgraph supports Mongo, Postgres, MySQL, and SqLite databases, making it easy for you to connect to your data.
 
-In this example we will create a SqLite DB and use Subgraph to generate an API around a few tables. Keep in mind, that connecting Subgrpah
+In this example we will create a SqLite DB and use Subgraph to generate an API around a few tables. Keep in mind, that connecting Subgraph
 to MySQL, Postgres, or even Mongo, is a very similar process.
 
 First, make sure you have SqLite installed on your system. The following guide is going to assume you are on a Linux machine.
