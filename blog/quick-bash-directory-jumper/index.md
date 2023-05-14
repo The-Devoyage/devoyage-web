@@ -7,6 +7,7 @@ date: 2023-05-12
 description: Avoid typing the path when changing directories in the terminal. These directory jumpers can help you quickly and easily change directories and are just fun to customize.
 keywords:
   [bash, directory jumper, bash alias, cd command, change directory linux]
+image: "https://res.cloudinary.com/the-devoyage/image/upload/v1684014246/cd_DesktopDevelopmentOrganizationProject_3_x1ozor.png"
 ---
 
 import {BlogFooter} from '@site/src/components/common/blog-footer'
@@ -54,7 +55,7 @@ Avoid The Path - Win!
 
 As time passes, you'll accumulate numerous projects in your development directory. It's the nature of the beast. And, as a developer you'll eventually find yourself sitting on the couch late at night trying to avoid doing the work you need to do in favor of writing a new function to help you improve your existing and perfectly fine way of jumping between directories.
 
-We can convert our alias into a function that is callalble from the command line. It's extreemly easy and can even take in an arguments!
+We can convert our alias into a function that is callalble from the command line. It's extreemly easy and can even take in arguments!
 
 Our function below will be called just like the bash alias above, simply type the given name, in our case `DEV`. This time it's going to take an optional second word/argument, which is the name of the folder of where you are changing to. For example, `DEV my-project`.
 
