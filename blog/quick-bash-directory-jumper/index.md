@@ -20,7 +20,7 @@ As developers, we are constantly jumping into and out of directories, spinning u
 
 So, let's take a look at some fancy ways to "avoid the path"!
 
-~![Avoid The Path](https://res.cloudinary.com/the-devoyage/image/upload/v1684007203/cd_DesktopDevelopmentOrganizationProject_1_ao2lhc.png)
+![Avoid The Path](https://res.cloudinary.com/the-devoyage/image/upload/v1684007203/cd_DesktopDevelopmentOrganizationProject_1_ao2lhc.png)
 
 <!--truncate-->
 

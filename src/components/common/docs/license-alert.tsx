@@ -1,10 +1,11 @@
 import React, { FC } from "react";
 import Link from "@docusaurus/Link";
 
-export const LicenseAlert: FC<{ product: string; to: string }> = ({
-  product,
-  to,
-}) => {
+export const LicenseAlert: FC<{
+  product: string;
+  to: string;
+  btnTxt?: string;
+}> = ({ product, to, btnTxt }) => {
   return (
     <div
       className="alert alert--info margin-vert--lg"
@@ -16,7 +17,9 @@ export const LicenseAlert: FC<{ product: string; to: string }> = ({
     >
       Want to support `@the-devoyage/{product}`?
       <Link to={to}>
-        <button className="button button--primary">Purchase MIT License</button>
+        <button className="button button--primary">
+          {btnTxt || "Purchase MIT License"}
+        </button>
       </Link>
     </div>
   );

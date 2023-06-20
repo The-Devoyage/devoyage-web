@@ -208,9 +208,13 @@ const config = {
                 href: "https://medium.com/@thedevoyage",
               },
               {
-                label: "Gumroad",
-                href: "https://thedevoyage.gumroad.com/",
+                label: "Twitter",
+                href: "https://twitter.com/thedevoyage",
               },
+              {
+                label: "Facebook",
+                href: "https://www.facebook.com/the-devoyage",
+              }
             ],
           },
           {
