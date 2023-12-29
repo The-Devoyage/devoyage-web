@@ -1,0 +1,8 @@
+{
+  "label": "CLI Options",
+  "position": 9,
+  "link": {
+    "type": "generated-index",
+    "description": "Enable user accounts and privilidged access to the API with WebAuthN/Passkeys -- and only a few lines of configuration."
+  }
+}

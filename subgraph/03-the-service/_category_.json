@@ -1,0 +1,8 @@
+{
+  "label": "Service Configuration",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "The first step to creating an API with Subgraph is to define a configuration file. This step is crucial and provides a method/api so that you may describe where your data is, what it looks like, and how it may be accessed. Subgraph uses these options to create an interface around your data."
+  }
+}

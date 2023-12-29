@@ -1,0 +1,8 @@
+{
+  "label": "Entities",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Entities are the backbone of Subgraph. They are the building blocks of your data model. Entities are the tables and collections in the database. Learn about how to define entities below."
+  }
+}

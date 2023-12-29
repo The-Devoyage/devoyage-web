@@ -1,0 +1,8 @@
+{
+  "label": "Guards",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Guards are used to limit access based on custom condtions. They can be hooked into various parts of the system to provide fine-grained access control.",
+  }
+}

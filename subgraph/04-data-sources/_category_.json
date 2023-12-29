@@ -1,0 +1,8 @@
+{
+  "label": "Data Sources",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Having at least one Data Source is required when starting the API. A data source can be a Database or another HTTP Restful API. Subgraph uses the data source in order to populate the data needed for each entity. Later, you can mix and match data sources - creating entities that use a combination of data from a variety of data sources. A `user` may pull data from Mongo, SQL, and Third Party Restful APIs."
+  }
+}

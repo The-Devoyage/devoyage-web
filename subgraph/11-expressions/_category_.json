@@ -1,0 +1,8 @@
+{
+  "label": "Expressions",
+  "position": 11,
+  "link": {
+    "type": "generated-index",
+    "description": "Subgraph provides options for fine grained customization in several locations throughout the configuration API by utilizing a simple to use scripting/evaluation \"language\" called EvalExpr."
+  }
+}

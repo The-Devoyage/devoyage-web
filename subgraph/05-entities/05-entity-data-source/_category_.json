@@ -1,0 +1,8 @@
+{
+  "label": "Entity Data Source",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Useful when working with multiple data sources or resolver specific guards, the Entity Data Source Config allows for configuration specific to resolvers or data origins."
+  }
+}
