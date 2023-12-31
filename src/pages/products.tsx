@@ -22,7 +22,7 @@ const products: ProductInfo[] = [
     image:
       "https://res.cloudinary.com/the-devoyage/image/upload/c_pad,h_300,w_600/v1681523977/Subgraph_Logo_2_gff26m.png",
     link: "/subgraph/intro",
-    badge: "v0.0.7",
+    badge: "v0.0.13",
     examples: [
       {
         label: "Configurations",
