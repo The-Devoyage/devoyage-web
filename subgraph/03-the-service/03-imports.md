@@ -5,9 +5,9 @@ title: Imports
 
 ## Importing Entities and Data Organization
 
-As the configuration file grows, the service file will bloat. Containing all configuration to a single file is acceptable as the application is small, but as it grows it may be worth separating logic into multiple files.
+As your configuration file expands, the service file may become unwieldy. While consolidating all configuration into a single file is acceptable for smaller applications, as your application grows, separating logic into multiple files becomes advantageous.
 
-Subgraph supports the ability to define entities in separate files, allowing configuration to be organized neatly.
+Subgraph supports the ability to define entities in separate files, offering a tidy and organized approach to configuration.
 
 ```toml
 [service]
@@ -41,4 +41,10 @@ fields = [
   { name = "title", scalar = "String", required = true },
   { name = "description", scalar = "String", required = true },
 ]
+
+## Any nested `entities` properties can be defined here.
+[[entities.guards]]
+...
+[[entities.data_source]]
+...
 ```

@@ -3,6 +3,6 @@
   "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "The first step to creating an API with Subgraph is to define a configuration file. This step is crucial and provides a method/api so that you may describe where your data is, what it looks like, and how it may be accessed. Subgraph uses these options to create an interface around your data."
+    "description": "The initial and vital step in creating an API with Subgraph is to define a configuration file. This step offers a method/API for describing the location of your data, its structure, and the methods of access. Subgraph utilizes these options to construct an interface that revolves around your data."
   }
 }

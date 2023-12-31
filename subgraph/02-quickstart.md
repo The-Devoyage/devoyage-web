@@ -3,28 +3,28 @@ id: quickstart
 title: Quickstart
 ---
 
-## The Five Minute API
+## Rapid API Deployment with Subgraph
 
-In less than a few minutes, you will have a new API. The goal is simple here - Spend your time with your data, not the code surrounding it.
+Achieve a new API in just a matter of minutes with Subgraph. Our primary objective is straightforward: let your focus remain on your data, while Subgraph takes care of the surrounding code intricacies.
 
 ### Download/Install
 
-Before getting started, make sure to obtain the software.
+To begin, ensure you have the Subgraph software in place.
 
-1. Download the latest version or build from source from [Github: The Devoyage - Subgraph](https://github.com/The-Devoyage/subgraph/tags)
+1. Download the latest version from [our store](https://thedevoyage.gumroad.com/l/subgraph). Free trial is available.
 2. Optionally, add the application to your path or make it easy to execute.
 
 ### The Config File
 
-The config file rules all with Subgraph. This will be used to provide options for everything needed to run the API, from how data is created to who should access the data.
+In the realm of Subgraph, the config file reigns supreme. It serves as the control center, offering options for everything essential to run the API – from defining data creation processes to specifying data access permissions.
 
 #### Create the File
 
-Start by creating a new file, `config.toml`. This will hold the base of the configuration. This file can be named anything with a `.toml` extension.
+Initiate the process by creating a new file named `config.toml`. The name of the file can be customized, but it must have a `.toml` extension.
 
-This TOML file will hold your configuration. [Toms Obvious Minimal Language](https://toml.io/en/) is quick and easy to learn!
+This TOML file serves as the vessel for your configuration. Check out [Toms Obvious Minimal Language](https://toml.io/en/) for a quick and easy guide!
 
-Defining a bare bones configuration is relatively simple and can be done by describing some basic service options, a data source, and an entity.
+Establishing a basic configuration is straightforward. Begin by outlining fundamental service options, specifying a data source, and defining an entity.
 
 ```toml
 # Information needed to start the Web Server.
@@ -62,25 +62,27 @@ fields = [
 
 ### Run the Service
 
-Ensure the data source is property configured and start the service. This might include creating initial structures and configuring databases. Migrations would be a great example of this.
+Confirm that the data source is correctly configured and initiate the service. This process may involve creating initial structures and configuring databases, with migrations being a prime example.
 
-```
+```bash
 subgraph --config ./config.toml
 ```
 
 ### Inspect the API
 
-Once started, navigate in your browser to the sandbox hosted at the specified port. In the case of the example above, port 3030.
+Once the service is running, open your browser and navigate to the sandbox hosted at the specified port, which, in the example above, is port 3030.
 
-From within the sandbox, the built in Docs section provides you with the API Capabilities. Subgraph's main job is to create methods in order to interact with data.
+![sandbox screenshot](https://res.cloudinary.com/the-devoyage/image/upload/v1680991155/Screenshot_from_2023-04-08_16-58-17_lt8kqz.png)
 
-- Find One - The ability to query the API for 1 result.
-- Find Many - The ability to search for many results.
-- Create One - Add new instances of entities to the data source.
-- Update One (when supported) - Modify properties of an entity.
-- Update Many - Modify properties of many entities.
+Inside the sandbox, explore the built-in Docs section to understand the API capabilities. Subgraph's primary role is to generate methods for interacting with data:
 
-From here, it's all about writing the graphql query to interact with the API! Don't be afraid to look at the generated Docs or Schema to assist.
+- **Find One:** Query the API for a single result.
+- **Find Many:** Search for multiple results.
+- **Create One:** Add new instances of entities to the data source.
+- **Update One (when supported):** Modify properties of a specific entity.
+- **Update Many:** Modify properties of multiple entities.
+
+To interact with the API, start by crafting a GraphQL query. Don't hesitate to refer to the generated Docs or Schema for assistance.
 
 ```graphql
 query FindOneCoffee {

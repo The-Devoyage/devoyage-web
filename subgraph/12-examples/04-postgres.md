@@ -1,0 +1,45 @@
+---
+id: examples-postgres
+title: Simple Postgres
+---
+
+```toml
+[service]
+name = "restaurants"
+port = 3032
+log_level = "debug"
+
+[[service.data_sources]]
+[service.data_sources.SQL]
+name = "restaurants"
+uri = "postgre://root:rootroot@localhost:5432/mydb"
+dialect = "POSTGRES"
+
+[[service.entities]]
+name = "restaurants"
+
+[service.entities.data_source]
+from = "restaurants"
+table = "restaurants"
+
+[[service.entities.fields]]
+name = "id"
+scalar = "Int"
+required = true
+exclude_from_input = ["CreateOne", "UpdateOne"]
+
+[[service.entities.fields]]
+name = "name"
+scalar = "String"
+required = true
+
+[[service.entities.fields]]
+name = "is_open"
+scalar = "Boolean"
+required = true
+
+[[service.entities.fields]]
+name = "rating"
+scalar = "Int"
+required = true
+```

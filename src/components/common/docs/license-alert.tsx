@@ -4,8 +4,9 @@ import Link from "@docusaurus/Link";
 export const LicenseAlert: FC<{
   product: string;
   to: string;
+  message?: string;
   btnTxt?: string;
-}> = ({ product, to, btnTxt }) => {
+}> = ({ product, to, message, btnTxt }) => {
   return (
     <div
       className="alert alert--info margin-vert--lg"
@@ -15,7 +16,7 @@ export const LicenseAlert: FC<{
         alignItems: "center",
       }}
     >
-      Want to support `@the-devoyage/{product}`?
+      {message || <span>Want to support `@the-devoyage/{product}`?</span>}
       <Link to={to}>
         <button className="button button--primary">
           {btnTxt || "Purchase MIT License"}

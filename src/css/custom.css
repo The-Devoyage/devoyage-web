@@ -20,6 +20,13 @@ h4 {
   font-family: "Nunito";
 }
 
+a {
+  color: #708fa8;
+}
+a:hover {
+  color: #a0ccf1;
+}
+
 /* You can override the default Infima variables here. */
 :root {
   /* Colors */
@@ -82,6 +89,8 @@ h4 {
   --ifm-card-background-color: #172e46;
 
   --ifm-button-color: var(--ifm-color-dark-blue);
+
+  --ifm-blockquote-color: #a0ccf1;
 }
 
 html[data-theme="dark"] {

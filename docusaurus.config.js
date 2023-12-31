@@ -55,6 +55,16 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
+        id: "subgraph",
+        path: "subgraph",
+        routeBasePath: "subgraph",
+        sidebarPath: require.resolve("./sidebars/sidebarsSubgraph.js"),
+        editUrl: "https://www.github.com/The-Devoyage/devoyage-web/blob/master",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
         id: "orions-arrow",
         path: "orions-arrow",
         routeBasePath: "orions-arrow",
@@ -140,6 +150,10 @@ const config = {
             label: "Docs",
             items: [
               {
+                label: "Subgraph",
+                to: "/subgraph/intro",
+              },
+              {
                 label: "Gateway",
                 to: "/gateway/intro",
               },
@@ -162,7 +176,7 @@ const config = {
               {
                 label: "Orion's Arrow",
                 to: "/orions-arrow/intro",
-              },
+              }
             ],
           },
           // { to: "/blog", label: "Blog", position: "right" },

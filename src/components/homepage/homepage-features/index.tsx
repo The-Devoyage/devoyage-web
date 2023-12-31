@@ -37,7 +37,7 @@ const featureList: FeatureItem[] = [
     ),
     links: [
       {
-        url: "https://www.github.com/the-devoyage/subgraph",
+        url: "/subgraph/intro",
         title: "Subgraph (alpha release)",
         image:
           "https://res.cloudinary.com/the-devoyage/image/upload/v1681523977/Subgraph_Logo_2_gff26m.png",

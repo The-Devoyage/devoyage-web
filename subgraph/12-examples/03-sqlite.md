@@ -1,0 +1,35 @@
+---
+id: examples-sqlite
+title: Simple SQLite
+---
+
+```toml
+[service]
+name = "espresso"
+port = 3030
+log_level = "debug"
+
+[[service.data_sources]]
+[service.data_sources.SQL]
+name = "caffeine_data_source"
+uri = "sqlite:/home/nickisyourfan/Desktop/DEV/dbs/caffeine.db"
+dialect = "SQLITE"
+
+[[service.entities]]
+name = "Coffee"
+fields = [
+{ name = "id", scalar = "Int", required = true, exclude_from_input = ["CreateOne", "UpdateOne", "UpdateMany"] },
+{ name = "name", scalar = "String", required = true },
+{ name = "price", scalar = "Int", required = true },
+{ name = "available", scalar = "Boolean", required = true }
+]
+
+[[service.entities]]
+name = "Espresso"
+fields = [
+{ name = "id", scalar = "Int", required = true, exclude_from_input = ["CreateOne", "UpdateOne", "UpdateMany"] },
+{ name = "name", scalar = "String", required = true },
+{ name = "price", scalar = "Int", required = true },
+{ name = "available", scalar = "Boolean", required = true }
+]
+```

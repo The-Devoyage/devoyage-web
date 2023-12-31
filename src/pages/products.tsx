@@ -21,7 +21,7 @@ const products: ProductInfo[] = [
       "Dynamically generate a functional API from a simple configuration/schema.",
     image:
       "https://res.cloudinary.com/the-devoyage/image/upload/c_pad,h_300,w_600/v1681523977/Subgraph_Logo_2_gff26m.png",
-    link: "https://github.com/the-devoyage/subgraph",
+    link: "/subgraph/intro",
     badge: "v0.0.7",
     examples: [
       {

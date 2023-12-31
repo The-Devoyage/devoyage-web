@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import Link from "@docusaurus/Link";
 import { ProductInfo } from "@site/src/pages/products";
+import clsx from "clsx";
 
 export const ProductCard: FC<ProductInfo> = ({
   title,
@@ -43,17 +44,12 @@ export const ProductCard: FC<ProductInfo> = ({
         </div>
       </div>
       <div className="row row--no-gutters card__footer margin--sm">
-        <Link to={link} className="col col--6">
-          Learn More
-        </Link>
         {examples.length ? (
           <div
-            className="dropdown dropdown--hoverable col col--6"
-            style={{ position: "relative" }}
+            className="dropdown dropdown--hoverable col col--6 text--left"
+            style={{ position: "relative", fontSize: "0.8rem" }}
           >
-            <button className="button button--secondary button--sm button--outline button--block">
-              Examples
-            </button>
+            Examples
             <ul className="dropdown__menu">
               {examples.map((e) => (
                 <li key={e.label}>
@@ -65,6 +61,17 @@ export const ProductCard: FC<ProductInfo> = ({
             </ul>
           </div>
         ) : null}
+        <Link
+          to={link}
+          className={clsx("col text--right", {
+            "col--6": examples.length,
+            "col--12": !examples.length,
+          })}
+        >
+          <button className="button button--secondary button--sm button--outline button--block">
+            Learn More
+          </button>
+        </Link>
       </div>
     </div>
   );
