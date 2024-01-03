@@ -83,10 +83,10 @@ if (credential instanceof PublicKeyCredential) {
 }
 ```
 
-## Response Details
+### Response Details
 
 After succcessfuly logging in you will receive three properties including the user's identifier, UUID, and token.
 
 - Identifier - The input provided by the user to identify their account. Usually an email or username.
 - UUID - The shareable id that can be used to identify a user.
-- Token - A signed `biscuit` token, similar to a JWT, that is used to further access the API. See the biscuit rust crate for more details concerning biscuits.
+- Token - A signed `biscuit` token, similar to a JWT, that is used to further access the API. See the biscuit rust crate for more information concerning biscuits.

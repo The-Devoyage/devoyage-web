@@ -32,9 +32,19 @@ export const BlogFooter = () => {
               { to: "https://medium.com/@thedevoyage", label: "Medium" },
               { to: "https://twitter.com/thedevoyage", label: "Twitter" },
               { to: "https://thedevoyage.slack.com", label: "Slack" },
+              {
+                to: "https://thedevoyage.gumroad.com/subscribe",
+                label: "Newsletter",
+              },
             ].map((source) => (
               <Link to={source.to} key={source.to}>
-                <button className="button button--primary margin-right--md">
+                <button
+                  className="button button--primary margin-right--md"
+                  style={{
+                    color: "#fff",
+                    backgroundColor: "var(--ifm-color-dark-blue)",
+                  }}
+                >
                   {source.label}
                 </button>
               </Link>

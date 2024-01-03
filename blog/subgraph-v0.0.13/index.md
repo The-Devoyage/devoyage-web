@@ -10,6 +10,7 @@ keywords: [graphql, subgraph, api, api generator]
 ---
 
 import {LicenseAlert} from '@site/src/components/common/docs';
+import {BlogFooter} from '@site/src/components/common/blog-footer'
 
 Welcome Voyager.
 
@@ -138,3 +139,5 @@ Security is seamlessly woven into Subgraph's fabric, leveraging WebAuthn for aut
 The unveiling of the new documentation website further cements Subgraph's dedication to user accessibility, providing a comprehensive resource for both novice and seasoned developers.
 
 Embark on this transformative journey with Subgraph, where ease meets innovation, and redefine your approach to API development.
+
+<BlogFooter />

@@ -53,7 +53,7 @@ const REGISTER_FINISH = gql`
 //  Extract the credential creation options from the previous response.
 const cco = response.register_start as CredentialCreationOptions;
 
-// Build the credential using the navigator credentials api.
+// Build the credential using the browser's navigator credentials api.
 const credential = await navigator.credentials.create({
   publicKey: {
     ...cco.publicKey,

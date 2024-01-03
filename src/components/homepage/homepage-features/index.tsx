@@ -99,6 +99,22 @@ const featureList: FeatureItem[] = [
       </p>
     ),
   },
+  {
+    title: "News Letter",
+    src:
+      "https://res.cloudinary.com/the-devoyage/image/upload/v1682534730/Mailer_1_yzngrl.png",
+    button: {
+      label: "Subscribe",
+      to: "https://thedevoyage.gumroad.com/subscribe",
+    },
+    description: (
+      <p>
+        Modern tech news and updates.{" "}
+        <span style={{ color: "var(--ifm-color-success)" }}>Subscribe</span> to
+        our newsletter.
+      </p>
+    ),
+  },
 ];
 
 function Feature({ title, src, description, button, links }: FeatureItem) {
