@@ -3,9 +3,9 @@ title: Create an Instant Passkey/Auth Server with Subgraph
 slug: passkey-auth-server-with-subgraph
 authors: [nick]
 tags: [subgraph, passkeys, webauthn, passkey server]
-date: 2024-01-01
+date: 2024-01-03
 description: Learn about and incorporate passkeys into your website in minutes with Subgraph.
-image: https://res.cloudinary.com/the-devoyage/image/upload/v1687224196/Subgraph_1_swkuzy.png
+image: https://res.cloudinary.com/the-devoyage/image/upload/v1704334411/Subgraph_as_Auth_ymnowz.png
 keywords:
   [graphql, subgraph, api, api generator, passkeys, webauthn, auth server]
 ---
