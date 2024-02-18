@@ -21,7 +21,7 @@ In essence, we are implementing a passwordless registration and login system, of
 
 Join us as we delve into the fundamentals of passkeys and explore the utilization of Subgraph as an Authentication Server for your current or prospective applications.
 
-![rocketship launch](https://media4.giphy.com/media/RJDkHk2fzVQ4qu7Jif/giphy.gif?cid=ecf05e472neioas4hwda04f7er3xlchy0odkj07msehi7o4p&ep=v1_gifs_search&rid=giphy.gif&ct=g)
+![subgraph as passkey feature image](https://res.cloudinary.com/the-devoyage/image/upload/v1704334411/Subgraph_as_Auth_ymnowz.png)
 
 <!-- truncate -->
 
@@ -292,6 +292,8 @@ After succcessfuly logging in you will receive three properties including the us
 - Identifier - The input provided by the user to identify their account. Usually an email or username.
 - UUID - The shareable id that can be used to identify a user.
 - Token - A signed `biscuit` token, similar to a JWT, that is used to further access the API. See the biscuit rust crate for more details concerning biscuits.
+
+![rocketship launch](https://media4.giphy.com/media/RJDkHk2fzVQ4qu7Jif/giphy.gif?cid=ecf05e472neioas4hwda04f7er3xlchy0odkj07msehi7o4p&ep=v1_gifs_search&rid=giphy.gif&ct=g)
 
 ## What's Next?
 

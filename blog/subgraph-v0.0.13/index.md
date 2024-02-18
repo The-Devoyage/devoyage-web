@@ -5,7 +5,7 @@ authors: [nick]
 tags: [subgraph]
 date: 2023-12-29
 description: Creating a flexible and standardized API is now easier than ever with Subgraph's new features such as built-in auth with webauthn and customizable data filtering.
-image: https://res.cloudinary.com/the-devoyage/image/upload/v1687224196/Subgraph_1_swkuzy.png
+image: https://res.cloudinary.com/the-devoyage/image/upload/v1704334822/Subgraph_v13_jvxykc.png
 keywords: [graphql, subgraph, api, api generator]
 ---
 
@@ -25,7 +25,7 @@ Today, the horizon expands, and you, fellow Voyager, are here to see it happen. 
 
 <LicenseAlert product="subgraph" to="https://thedevoyage.gumroad.com/l/subgraph" btnTxt="Early Alpha Release" />
 
-![sailboat gif](https://media.giphy.com/media/hWSXtvw9P3aAov0UX3/giphy.gif)
+![feature image](https://res.cloudinary.com/the-devoyage/image/upload/v1704334822/Subgraph_v13_jvxykc.png)
 
 <!--truncate-->
 
@@ -121,6 +121,8 @@ We are thrilled to unveil the new documentation website for Subgraph, offering u
 This user-friendly platform is designed to provide comprehensive guidance on configuring, running, and inspecting APIs with Subgraph. With a clean and organized layout, users can easily
 explore the documentation, access quick-start guides, and delve into detailed explanations of Subgraph's features. The new doc website is a testament to our commitment to user accessibility
 and support, ensuring that both beginners and experienced developers can harness the full potential of Subgraph effortlessly. Explore the documentation now and embark on a journey to streamline your API development process.
+
+![sailboat gif](https://media.giphy.com/media/hWSXtvw9P3aAov0UX3/giphy.gif)
 
 ## Create a Graph For Free
 
