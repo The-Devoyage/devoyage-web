@@ -1,0 +1,8 @@
+{
+  "label": "Usage",
+  "position": 02,
+  "link": {
+    "type": "generated-index",
+    "description": "From crafting queries to receiving data, this section describes how to interact with a running instance of Subgraph."
+  }
+}

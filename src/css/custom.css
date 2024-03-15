@@ -85,7 +85,7 @@ a:hover {
 
   /* Cards */
   --ifm-card-border-radius: 0.25rem;
-  --ifm-button-border-radius: 3rem;
+  --ifm-button-border-radius: 0.25rem;
   --ifm-card-background-color: #172e46;
 
   --ifm-button-color: var(--ifm-color-dark-blue);

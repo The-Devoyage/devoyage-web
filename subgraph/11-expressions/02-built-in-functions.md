@@ -76,3 +76,19 @@ Extracts a vector or tuple of values that come from the guard generated context.
 The key passed in as an argument needs to match the `name` of the given [guard context](/subgraph/guards/guard-data-context) that is defined with the associated guard.
 
 Returns a vector of values associated with the key provided, in similar fashion to the input function shown above.
+
+### The `now` Function
+
+Returns a `datetime`.
+
+**Usage:**
+
+- `now()`
+
+### The `uuid` Function
+
+Returns a `uuid`
+
+**Usage:**
+
+- `uuid()`
