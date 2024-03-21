@@ -14,7 +14,7 @@ import {BlogFooter} from '@site/src/components/common/blog-footer'
 
 Welcome Voyager.
 
-Thank you for joining us. Today, we're delving into Subgraph, a Rust-based GraphQL tool designed to simplify the creation of scalable backends.
+Thank you for joining! Today, we're delving into Subgraph, a Rust-based GraphQL tool designed to simplify the creation of scalable backends.
 
 Building applications can often feel overwhelming, especially when tackling server-side logic that requires scalability,
 security, and flexibility. Subgraph aims to ease this challenge by emphasizing data ownership and DevOps control.
