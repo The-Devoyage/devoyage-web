@@ -13,7 +13,7 @@ import {BlogFooter} from '@site/src/components/common/blog-footer'
 
 Welcome Voyager and thanks for joining!
 
-Hey there, fellow developers! Today, let's dive into the exciting world of using Rust for your next backend GraphQL Project! I'm super pumped to introduce you to some fantastic crates that can truly level up your development journey.
+Today, let's dive into the exciting world of using Rust for your next back end GraphQL Project! I'm super pumped to introduce you to some fantastic crates that can truly level up your development journey.
 
 Isn't it awesome how Rust has been buzzing lately? And guess what? The excitement isn't dying down anytime soon! As someone who thrives on learning new languages and embracing their quirks, I can tell you firsthand that Rust is a ride worth hopping on, even if it's just for a quick spin. Exploring different languages not only expands your toolkit but also enriches your overall coding skills.
 
@@ -53,7 +53,7 @@ The Rust community is vibrant and growing by the day. From cutting-edge librarie
 
 Rust doesn't just stop at the language itself – it comes bundled with a suite of powerful tools for testing, documentation generation, and more. With Rust, you can kiss goodbye to juggling multiple third-party tools – everything you need is right at your fingertips.
 
-So there you have it – just a few of the many reasons why Rust might be the perfect choice for your next backend project. But hey, don't just take my word for it – dive in and experience the Rust magic for yourself! Let's take a look at some of these "powerhouse" crates
+So there you have it – just a few of the many reasons why Rust might be the perfect choice for your next back end project. But hey, don't just take my word for it – dive in and experience the Rust magic for yourself! Let's take a look at some of these "powerhouse" crates
 that make working in rust a bit easier!
 
 ## The Crates
@@ -80,11 +80,11 @@ Whether you're just getting started with GraphQL or you're a seasoned pro lookin
 
 ### Warp Web Server - [warp](https://docs.rs/warp/latest/warp/)
 
-When it comes to handling the networking logic for your Rust backend, look no further than the warp crate. Just like in other languages, you'll need a reliable web server, and warp makes integrating one into your application a breeze.
+When it comes to handling the networking logic for your Rust back end, look no further than the warp crate. Just like in other languages, you'll need a reliable web server, and warp makes integrating one into your application a breeze.
 
 **Filter-Based Composition**
 
-What sets warp apart is its innovative "Filter" based composition. This approach makes it incredibly simple to define and compose complex routes and handlers, allowing you to build powerful APIs with minimal boilerplate code. And when it comes to integrating with async_graphql, warp truly shines, particularly in resolving federated graphs. With warp, you can effortlessly combine the power of GraphQL with the flexibility of Warp's filter-based routing, unlocking a world of possibilities for your backend development.
+What sets warp apart is its innovative "Filter" based composition. This approach makes it incredibly simple to define and compose complex routes and handlers, allowing you to build powerful APIs with minimal boilerplate code. And when it comes to integrating with async_graphql, warp truly shines, particularly in resolving federated graphs. With warp, you can effortlessly combine the power of GraphQL with the flexibility of Warp's filter-based routing, unlocking a world of possibilities for your back end development.
 
 So whether you're building a simple REST API or a sophisticated GraphQL server, warp is your go-to solution for fast, reliable, and flexible networking in Rust. Give it a try and see the difference it can make in your development workflow!
 
@@ -156,7 +156,7 @@ One of the standout features of webauthn-rs is its ease of integration. Whether 
 
 **Seamless Frontend Integration**
 
-But webauthn-rs doesn't stop at the backend – it also plays well with frontend libraries to streamline the authentication flow. Whether you're using React, Vue.js, or another frontend framework, webauthn-rs can easily be paired with frontend libraries to create a seamless and intuitive authentication experience for your users.
+But webauthn-rs doesn't stop at the back end – it also plays well with frontend libraries to streamline the authentication flow. Whether you're using React, Vue.js, or another frontend framework, webauthn-rs can easily be paired with frontend libraries to create a seamless and intuitive authentication experience for your users.
 
 So if you're ready to take your authentication system to the next level with passkey-based authentication, give webauthn-rs a try. With its simplicity, security, and sleek user interface, it's sure to be a game-changer for your application.
 
