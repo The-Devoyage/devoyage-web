@@ -253,7 +253,7 @@ const config = {
       },
       prism: {
         theme: customCodeTheme,
-        additionalLanguages: ["toml"]
+        additionalLanguages: ["toml", "rust"]
       },
     }),
 };
