@@ -3,9 +3,9 @@ title: Rust X JS - Class vs Struct - A look at Rust Through JS Tinted Glasses
 slug: rust_x_js-class_vs_struct
 authors: [nick]
 tags: [rust-x-js, rust, javascript]
-date: 2024-04-09
+date: 2024-04-10
 description: Looking at rust vs javascript and comparing classes to structs! Learn some rust, learn some JS.
-#image: https://res.cloudinary.com/the-devoyage/image/upload/v1711036382/subgraphv14_jnpclv.png
+image: https://res.cloudinary.com/the-devoyage/image/upload/v1712804125/Rust_X_JS_adiz47.png
 keywords: [rust, javascript, rustxjs]
 ---
 
@@ -25,10 +25,12 @@ Let's compare the similarities and differences between these two concepts so tha
 better understand their respective roles and functionalities in programming languages. By
 examining their similarities, we can identify common principles that underlie both
 concepts, facilitating knowledge transfer between languages and enhancing our ability to
-leverage their features effectively.
+leverage their features effectively. In the end, hopefully we can learn some Rust!
 
 Keep in mind that this is mostly psuedo-code written to show quick comparisons. You may need to tweak
 it to get it to run!
+
+![Rust x JS Logo](https://res.cloudinary.com/the-devoyage/image/upload/v1712804125/Rust_X_JS_adiz47.png)
 
 <!-- truncate -->
 
@@ -36,11 +38,13 @@ it to get it to run!
 
 First, take a look at a basic starting point for each language by defining a Class and a Struct.
 
+In JavaScript:
+
 ```js
 class User {}
 ```
 
-and
+and in Rust:
 
 ```rust
 struct User {}
@@ -109,7 +113,7 @@ class User {
 }
 ```
 
-and
+and in Rust:
 
 ```rust
 struct User {
@@ -129,10 +133,14 @@ impl User {
 
 Once a struct is defined, we can create an instance of the user in each respective language.
 
+In JS:
+
 ```js
 const user = new User("Bongo", 11);
 console.log(user.greet()); // Invoke the method.
 ```
+
+In Rust:
 
 ```rust
 let user = User {
@@ -182,7 +190,7 @@ class Group {
 // Our user class receiving the provided functionality
 class User extends Group {
     constructor() {
-        // ...rest of construcotr
+        // ...rest of constructor
         super(); // Get the provided functionality
     }
     add() {
@@ -195,7 +203,7 @@ const user = new User("Bongo", 11);
 await user.add();
 ```
 
-In rust, we can see similar execution using Traits.
+In Rust, we can see similar execution using Traits.
 
 ```rust
 // Define a trait named Group
@@ -234,7 +242,7 @@ While both Rust Structs and JavaScript Classes share similarities, they also can
 capacities. Further reading that might interest you is how a Struct may also be a tuple or
 how method overloading is achieved. There is much to learn and compare!
 
-None the less, I hope you had some fun comparing these concepts! To me, it's always interesting finding
+Nonetheless, I hope you had some fun comparing these concepts! To me, it's always interesting finding
 and understanding the patterns that persist between the barrier of multiple domains such as
 the chosen programming language. We really are all doing the same thing, regardless of language!
 
