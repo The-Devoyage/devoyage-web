@@ -1,6 +1,6 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-const customCodeTheme = require("prism-react-renderer/themes/nightOwl");
+import { themes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -122,6 +122,17 @@ const config = {
         editUrl: "https://www.github.com/The-Devoyage/devoyage-web/blob/master",
       },
     ],
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        redirects: [
+          {
+            to: "/subgraph/intro",
+            from: ["/subgraph"],
+          },
+        ],
+      },
+    ]
   ],
 
   themeConfig:
@@ -252,7 +263,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} The Devoyage, LLC.`,
       },
       prism: {
-        theme: customCodeTheme,
+        theme: themes.nightOwl,
         additionalLanguages: ["toml", "rust"]
       },
     }),
