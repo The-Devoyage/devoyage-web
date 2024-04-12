@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdevoyage_web=self.webpackChunkdevoyage_web||[]).push([[348],{8194:e=>{e.exports=JSON.parse('{"label":"backend","permalink":"/blog/tags/backend","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

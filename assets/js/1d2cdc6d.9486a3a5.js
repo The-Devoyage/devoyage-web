@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdevoyage_web=self.webpackChunkdevoyage_web||[]).push([[7580],{2913:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"orions-arrow"}')}}]);

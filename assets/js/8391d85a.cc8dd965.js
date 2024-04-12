@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdevoyage_web=self.webpackChunkdevoyage_web||[]).push([[7752],{9144:e=>{e.exports=JSON.parse('{"label":"rust-x-js","permalink":"/blog/tags/rust-x-js","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

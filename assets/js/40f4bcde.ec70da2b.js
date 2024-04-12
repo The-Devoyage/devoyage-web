@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdevoyage_web=self.webpackChunkdevoyage_web||[]).push([[4057],{5093:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/directory-jumper","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

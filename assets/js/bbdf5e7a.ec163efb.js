@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdevoyage_web=self.webpackChunkdevoyage_web||[]).push([[3963],{2847:e=>{e.exports=JSON.parse('{"label":"bash","permalink":"/blog/tags/bash","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdevoyage_web=self.webpackChunkdevoyage_web||[]).push([[8469],{3671:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"media"}')}}]);

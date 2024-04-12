@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdevoyage_web=self.webpackChunkdevoyage_web||[]).push([[3112],{9706:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/subgraph","page":1,"postsPerPage":10,"totalPages":1,"totalCount":10,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
