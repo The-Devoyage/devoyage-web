@@ -6,7 +6,7 @@ const services: { name: string; description: ReactNode; badges: string[] }[] = [
     description: (
       <>The website, design, and interface that your users interact with.</>
     ),
-    badges: ["React", "HTML", "CSS", "JavaScript"],
+    badges: ["React", "HTML", "CSS", "JavaScript", "TypeScript"],
   },
   {
     name: "Backend Development",
@@ -14,16 +14,23 @@ const services: { name: string; description: ReactNode; badges: string[] }[] = [
       <>
         Store sensitive sensitive on the server and use modern networking tools
         to secure the data. The backend allows the frontend to access the
-        information within the databse.
+        information within the database.
       </>
     ),
-    badges: ["Express", "GraphQL", "Apollo Server", "Mongo Database"],
+    badges: [
+      "Rust",
+      "Express",
+      "GraphQL",
+      "Apollo Server",
+      "Mongo Database",
+      "SQL",
+    ],
   },
   {
     name: "Admin Panel",
     description: (
       <>
-        Allow higher level users to easilly edit all data within the databse,
+        Allow higher level users to easily edit all data within the database,
         contact users, view site statistics, and design email templates for your
         business.
       </>
@@ -35,7 +42,7 @@ const services: { name: string; description: ReactNode; badges: string[] }[] = [
     description: (
       <>
         Connect with writing specialists to create descriptions and content that
-        represents your product accuratly.
+        represents your product accurately.
       </>
     ),
     badges: ["Writing", "Text"],
@@ -48,7 +55,7 @@ const services: { name: string; description: ReactNode; badges: string[] }[] = [
         website styled specifcally for your business.
       </>
     ),
-    badges: ["Wireframes", "Figma", "CoreUI"],
+    badges: ["Wireframes", "Figma", "UI Libraries"],
   },
   {
     name: "Deployment",
@@ -70,7 +77,7 @@ const services: { name: string; description: ReactNode; badges: string[] }[] = [
     description: (
       <>
         Choose to use our Code Genesis Products to kick start development and
-        always have acess to the newest features and services that we provide.
+        always have access to the newest features and services that we provide.
       </>
     ),
     badges: [

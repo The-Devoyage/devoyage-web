@@ -1,7 +1,6 @@
 import Link from "@docusaurus/Link";
-import clsx from "clsx";
-import React, { FC, ReactNode, useEffect, useState } from "react";
-import styles from "./index.module.css";
+import React, { FC, ReactNode } from "react";
+import "./styles.css";
 
 interface SequencedCardProps {
   seconds: number;
@@ -9,107 +8,104 @@ interface SequencedCardProps {
     pill: string;
     header: string;
     body: ReactNode;
+    image: string;
   }[];
 }
 
 export const SequencedCard: FC<SequencedCardProps> = ({ seconds, cards }) => {
-  const [activePill, setActivePill] = useState<string>(cards[0].pill);
-  const [shouldSequence, setShouldSequence] = useState(true);
-  const pills = cards.map((c) => c.pill);
-
-  useEffect(() => {
-    if (shouldSequence) {
-      if (pills.length > 1) {
-        const currentPillIndex = pills.findIndex((p) => p === activePill);
-        let nextPill = pills[0];
-        if (currentPillIndex !== pills.length - 1) {
-          nextPill = pills[currentPillIndex + 1];
-        }
-        const interval = setInterval(
-          () => setActivePill(nextPill),
-          seconds * 1000
-        );
-        return () => clearInterval(interval);
-      }
-    } else {
-      const resetSequence = setTimeout(() => {
-        setShouldSequence(true);
-      }, 30000);
-
-      return () => clearTimeout(resetSequence);
-    }
-  }, [pills, shouldSequence]);
-
   return (
-    <div className="card shadow--md margin-vert--md">
-      <div className="card__header">
-        <ul className="pills pills--block">
-          {pills.map((p) => (
-            <li
-              key={p}
-              onClick={() => {
-                setActivePill(p);
-                setShouldSequence(false);
-              }}
-              className={clsx(
-                "pills__item",
-                `${activePill === p ? "pills__item--active" : ""}`
-              )}
-            >
-              <h2 style={{ marginBottom: 0 }}>{p}</h2>
-            </li>
-          ))}
-        </ul>
-      </div>
+    <div className="margin-vert--md">
       {cards.map((c, idx) => (
         <div
           key={c.pill}
-          style={{ minHeight: 300 }}
-          className={clsx(
-            "card shadow--tl margin--md",
-            `${activePill === c.pill ? styles.activeCard : styles.hiddenCard}`
-          )}
+          style={{
+            minHeight: 300,
+            background: ![1, 3].includes(idx) && "rgba(0, 0, 0, 0.5)",
+            display: "flex",
+            flexDirection: "column",
+            border: ![1, 3].includes(idx) && "1px solid #eaecef",
+          }}
         >
+          {idx === 0 && (
+            <img
+              src={c.image}
+              alt="development image"
+              height="400"
+              style={{
+                objectFit: "cover",
+                borderTopLeftRadius: 3,
+                borderTopRightRadius: 3,
+              }}
+            />
+          )}
           <div
-            className="row row--no-gutters"
+            className="row row--no-gutters padding--lg"
             style={{
               display: "flex",
               justifyContent: "center",
-              alignItems: "center",
-              height: "100%",
             }}
           >
-            <div className="col col--2">
+            <div className="col col--10">
               <div
-                className="card__header"
+                className="card__body"
                 style={{
                   display: "flex",
-                  justifyContent: "center",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                  height: "100%",
                 }}
               >
-                <div className="badge badge--secondary">
-                  <h1
-                    className="margin-horiz--lg"
-                    style={{ marginBottom: 0, fontSize: "5rem" }}
-                  >
-                    {idx + 1}
-                  </h1>
+                <div>
+                  <div className="service-card">
+                    {idx === 3 && (
+                      <img
+                        src={c.image}
+                        alt="development image"
+                        height="300"
+                        width="300"
+                        style={{
+                          objectFit: "cover",
+                          borderTopLeftRadius: 3,
+                          borderTopRightRadius: 3,
+                          marginRight: 20,
+                        }}
+                      />
+                    )}
+                    <div>
+                      <h1>{c.header}</h1>
+                      {c.body}
+                    </div>
+                    {idx === 1 && (
+                      <img
+                        src={c.image}
+                        alt="development image"
+                        height="300"
+                        width="300"
+                        style={{
+                          objectFit: "cover",
+                          borderTopLeftRadius: 3,
+                          borderTopRightRadius: 3,
+                        }}
+                      />
+                    )}
+                  </div>
                 </div>
+                {idx === cards.length - 1 && (
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "flex-end",
+                    }}
+                  >
+                    <Link href="https://thedevoyage.gumroad.com/l/itemized-estimate">
+                      <button className="button button--primary button--outline">
+                        Free Consultation
+                      </button>
+                    </Link>
+                  </div>
+                )}
               </div>
             </div>
-            <div className="col col--10">
-              <div className="card__body">
-                <h1>{c.header}</h1>
-                {c.body}
-              </div>
-            </div>
-          </div>
-          <div className="card__footer">
-            <Link href="https://thedevoyage.gumroad.com/l/itemized-estimate">
-              <button className="button button--primary button--block">
-                Free Consultation
-              </button>
-            </Link>
           </div>
         </div>
       ))}

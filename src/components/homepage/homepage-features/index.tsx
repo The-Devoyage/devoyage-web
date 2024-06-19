@@ -21,18 +21,17 @@ type FeatureItem = {
 
 const featureList: FeatureItem[] = [
   {
-    title: "Productivity",
+    title: "Tooling",
     src:
       "https://res.cloudinary.com/the-devoyage/image/upload/v1682534171/tech-cog_l4lmmk.png",
-    button: { label: "Browse Products", to: "/products" },
+    button: { label: "Browse Tools", to: "/products" },
     description: (
       <p>
-        Add Code Genesis Products
+        Kick start your projects with developer focused
         <span style={{ color: "var(--ifm-color-success)" }}>
           {" "}
-          Applications and Libraries
+          Applications and Libraries.
         </span>{" "}
-        to almost any stack to kick start development.
       </p>
     ),
     links: [
@@ -71,21 +70,21 @@ const featureList: FeatureItem[] = [
       },
     ],
   },
-  {
-    title: "Support",
-    src:
-      "https://res.cloudinary.com/the-devoyage/image/upload/v1682533859/wrenches_yxrlke.png",
-    button: { label: "Development Services", to: "/services" },
-    description: (
-      <p>
-        Tools built so that developers can jump in to easily provide their own
-        modifications{" "}
-        <span style={{ color: "var(--ifm-color-success)" }}>
-          with help from The Devoyage Team.
-        </span>
-      </p>
-    ),
-  },
+  // {
+  //   title: "Support",
+  //   src:
+  //     "https://res.cloudinary.com/the-devoyage/image/upload/v1682533859/wrenches_yxrlke.png",
+  //   button: { label: "Development Services", to: "/services" },
+  //   description: (
+  //     <p>
+  //       Tools built so that developers can jump in to easily provide their own
+  //       modifications{" "}
+  //       <span style={{ color: "var(--ifm-color-success)" }}>
+  //         with help from The Devoyage Team.
+  //       </span>
+  //     </p>
+  //   ),
+  // },
   {
     title: "Open Source",
     src:

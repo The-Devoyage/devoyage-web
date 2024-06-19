@@ -20,3 +20,11 @@ fields = [
 
 Default values use `evalexpr`, a popular rust crate, to calcaulate the value dynamically based on the context
 of a request using the same API as Guard Expressions.
+
+### Setting `null` Default Values
+
+You may allow `null` to be used as a default value by passing type string `"null"`.
+
+```toml
+{ name = "url", scalar = "String",  default_value = "null" },
+```

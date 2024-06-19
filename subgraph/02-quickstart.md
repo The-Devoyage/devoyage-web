@@ -11,7 +11,11 @@ Achieve a new API in just a matter of minutes with Subgraph. Our primary objecti
 
 To begin, ensure you have the Subgraph software in place.
 
-1. Download the latest version from [our store](https://thedevoyage.gumroad.com/l/subgraph). Free trial is available.
+```bash
+cargo install devoyage-subgraph
+```
+
+1. Optionally for production environments, purchase a license key from [our store](https://thedevoyage.gumroad.com/l/subgraph).
 2. Optionally, add the application to your path or make it easy to execute.
 
 ### The Config File

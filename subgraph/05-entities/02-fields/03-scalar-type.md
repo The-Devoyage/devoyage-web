@@ -101,3 +101,15 @@ fields = [
     ] }
 ]
 ```
+
+### Enum Scalars
+
+GraphQL Enums allow defined options that can be determined ahead of time and can be specified from the config file.
+
+```toml
+[[service.entities]]
+name = "ice_cream"
+fields = [
+    { name = "flavors", scalar = "Enum", enum_values = ["CHOCOLATE", "RASPBERRY"], required = true },
+]
+```

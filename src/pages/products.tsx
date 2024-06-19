@@ -22,7 +22,7 @@ const products: ProductInfo[] = [
     image:
       "https://res.cloudinary.com/the-devoyage/image/upload/c_pad,h_300,w_600/v1681523977/Subgraph_Logo_2_gff26m.png",
     link: "/subgraph/intro",
-    badge: "v0.0.13",
+    badge: "v0.0.15",
     examples: [
       {
         label: "Configurations",
@@ -93,7 +93,7 @@ const Products = () => {
     <Layout>
       <div className="background--overlay" />
       <Header
-        title="Code Genesis Products"
+        title="Tools and Libraries"
         tagline="Micro Services, Libraries, and More"
         Svg={Ship}
         buttons={{

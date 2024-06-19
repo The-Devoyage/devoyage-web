@@ -5,7 +5,7 @@ import { themes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "The Devoyage",
-  tagline: "Code Genesis is Just The Start",
+  tagline: "Voyage, Code, Conquer",
   url: "https://www.thedevoyage.com",
   baseUrl: "/",
   onBrokenLinks: "ignore",
@@ -153,7 +153,7 @@ const config = {
           {
             to: "/products",
             position: "right",
-            label: "Products",
+            label: "Solutions",
           },
           { to: 'blog', label: 'Blog', position: 'right' },
           {

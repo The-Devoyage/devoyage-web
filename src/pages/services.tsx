@@ -4,18 +4,18 @@ import { Header } from "@site/src/components/common/header";
 import { Description } from "../components/common/description";
 import { SequencedCard } from "../components/common/sequenced-card";
 import { ServicesList } from "../components/services/services-list";
-import { default as Wrenches } from "@site/static/img/wrenches.svg";
+import { default as Ship } from "@site/static/img/logo.svg";
 
 const Services = () => {
   return (
     <Layout>
       <Header
-        title="Development Services"
-        tagline="An Open Ocean of Opportunities for your Business Plans"
-        Svg={Wrenches}
+        title="Services"
+        tagline="Technology Solutions for Your Business Needs"
+        Svg={Ship}
         buttons={{
           left: {
-            label: "Free Consultation",
+            label: "Let's Talk",
             to: "https://thedevoyage.gumroad.com/l/itemized-estimate",
           },
           right: { label: "Learn More", to: "#services_description" },
@@ -28,90 +28,88 @@ const Services = () => {
           id="services_description"
         >
           <Description
-            title="Professional, Customized, and Stylish Development"
+            title="Consultations, Design, Development, and Launch"
             description={
               <>
-                Share your vision and we will take care of the rest. The
-                Devoyage works directly with you to create a customized website
-                specific to your needs, preferences, and budget.
+                The Devoyage offers a range of services to help you get your
+                business online. From consultations to design and development,
+                we are here to help you every step of the way.
               </>
             }
           />
         </div>
         <SequencedCard
-          seconds={4}
+          seconds={5}
           cards={[
             {
-              pill: "Share",
-              header: "Free Consultation",
+              pill: "Consultations",
+              header: "Share Your Vision",
+              image:
+                "https://images.pexels.com/photos/840996/pexels-photo-840996.jpeg",
               body: (
                 <h3>
-                  The Devoyage takes your ideas and creates a customized website
-                  specific to your needs and preferences.
+                  Need help getting started? We are here to help you understand
+                  what it takes to get your business online.
                   <br />
                   <br />
-                  All you need to do to get started is share your vision and we
-                  will be ready to help navigate.
+                  Every business is unique, and we are here to help you find the
+                  right technology solutions for your business needs. We offer
+                  free consultations to help you get started.
                 </h3>
               ),
             },
             {
-              pill: "Plan",
-              header: "Itemized Estimate",
+              pill: "Web Apps",
+              header: "Design Your Application",
+              image:
+                "https://images.pexels.com/photos/4126724/pexels-photo-4126724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
               body: (
                 <h3>
-                  Every client receives a Itemized Estimate, in which we lay out
-                  a professional plan in clear and simple terms that anyone can
-                  follow.
+                  Professional design, tailored to your business needs. Trained
+                  and experienced developers are here to design, develop, and
+                  launch your application.
                   <br />
                   <br />
-                  You get an accurate quote and timeline alongside a clear idea
-                  of the expectations that your new application will provide.
+                  With a focus on user experience, scalability, performance, and
+                  security, we are here to help you build a successful
+                  application.
                 </h3>
               ),
             },
             {
-              pill: "Design",
-              header: "Match Your Look",
-              body: (
-                <h3>
-                  Bring your own designs or let us help create a design that
-                  matches your business. It is importat to us that you know what
-                  your application will look like before even starting the
-                  development process.
-                  <br />
-                  <br />
-                  Work with Copy and Design Professionals to create the style
-                  that perfectly matches your business.
-                </h3>
-              ),
-            },
-            {
-              pill: "Develop",
+              pill: "Tooling and Libraries",
               header: "Let's Code",
+              image:
+                "https://images.pexels.com/photos/270640/pexels-photo-270640.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
               body: (
                 <h3>
-                  Once you are happy with the plan and design, it is finally
-                  time to start building your application.
+                  Get help designing and developing tools and libraries to help
+                  you build your application. We specialize in creating internal
+                  tools to streamline your development process.
                   <br />
                   <br />
-                  Focus on your business while we follow the guidence of the
-                  plan and design. A great plan leads to great success.
+                  We offer a range of tools and libraries to help you get your
+                  application online faster. Additionally, we can help you
+                  develop custom tools and libraries to meet your specific
+                  needs.
                 </h3>
               ),
             },
             {
-              pill: "Launch",
-              header: "The Big Day",
+              pill: "Dev Ops",
+              header: "Launch Your Application",
+              image:
+                "https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
               body: (
                 <h3>
-                  Once you are happy with your product, we are here to help push
-                  it to the internet.
+                  Weather you want to host your application on a cloud provider
+                  or on your own servers, we can help you get your application
+                  online.
                   <br />
                   <br />
-                  Add new features as needed or tweak the application to fit the
-                  needs of your user. At this point we can help maintain a
-                  healthy website.
+                  We specialize in deploying applications to the cloud and
+                  setting up continuous integration and continuous deployment
+                  pipelines.
                 </h3>
               ),
             },

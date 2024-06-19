@@ -8,16 +8,21 @@
   src: url("/font/Nunito/Nunito-VariableFont_wght.ttf");
 }
 
+@font-face {
+  font-family: "DroidSansMono";
+  src: url("/font/DroidSansMono.ttf");
+}
+
 html {
   scroll-behavior: smooth;
-  font-family: "Nunito";
+  font-family: "DroidSansMono";
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Nunito";
+  font-family: "DroidSansMono";
 }
 
 a {
